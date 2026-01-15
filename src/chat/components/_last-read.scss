@@ -1,0 +1,19 @@
+:root {
+  --last-read-separator-text-color: var(--last-read-separator-color);
+  --last-read-separator-line-color: var(--last-read-separator-color);
+}
+
+.last-read-separator-text {
+  color: var(--last-read-separator-text-color);
+}
+
+.last-read-separator::before,
+.last-read-separator::after {
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--last-read-separator-line-color),
+    var(--last-read-separator-line-color),
+    transparent
+  );
+}

@@ -4,7 +4,6 @@
   "editor.insertSpaces": true,
   "editor.rulers": [80],
   "files.exclude": {
-    "dist/": true,
     "node_modules/": true
   },
   "files.insertFinalNewline": true,

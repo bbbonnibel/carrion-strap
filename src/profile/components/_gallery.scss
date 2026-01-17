@@ -4,32 +4,24 @@
   --columns: 3;
   --inner-space: var(--space);
   --outer-space: var(--space);
+  --image-radius: var(--carrion-image-corner-radius);
   display: grid;
   justify-content: center;
   grid: auto-flow / repeat(var(--columns), var(--thumb-size));
   gap: var(--inner-space);
   padding: var(--outer-space);
 
-  a {
+  > a {
     height: var(--thumb-size);
     width: var(--thumb-size);
     border-bottom: unset;
-    border-radius: var(--carrion-image-corner-radius);
+    border-radius: var(--image-radius);
   }
 
   img {
-    height: 100%;
-    width: 100%;
+    height: var(--thumb-size);
+    width: var(--thumb-size);
+    border-radius: var(--image-radius);
     object-fit: cover;
   }
-}
-
-.cs-gallery .cs-fit-top,
-.cs-gallery .cs-fit-top img {
-  object-position: top;
-}
-
-.cs-gallery .cs-fit-bottom,
-.cs-gallery .cs-fit-bottom img {
-  object-position: bottom;
 }

@@ -1,0 +1,14 @@
+@include object-fit($fit) {
+  &,
+  & > img {
+    object-fit: $fit;
+  }
+}
+
+$fits: contain, cover, fill, none, scale-down;
+
+@each $fit in $fits {
+  .cs-fit-#{$fit} {
+    @include object-fit($fit);
+  }
+}

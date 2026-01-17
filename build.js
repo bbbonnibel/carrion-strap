@@ -1,9 +1,14 @@
 const fs = require("fs-extra");
 const path = require("path");
 const sass = require("sass");
+const package = require("./package.json");
 
-const PATH_RELEASE = path.join(__dirname, "release");
+const VERSION = package.version.split(".").slice(0, 2).join(".");
+const PATH_RELEASE = path.join(__dirname, "release", VERSION);
 const PATH_SRC = path.join(__dirname, "src");
+
+console.log("Building version", VERSION);
+
 fs.emptyDirSync(PATH_RELEASE);
 
 const files = [

@@ -1,0 +1,7 @@
+details:open + .cs-if-closed-above {
+  display: none;
+}
+
+details:not(:open) + .cs-if-open-above {
+  display: none;
+}

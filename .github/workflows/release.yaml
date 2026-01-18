@@ -1,0 +1,57 @@
+name: Build for release branch
+
+on:
+  push:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Allow one concurrent deployment
+concurrency:
+  group: "release"
+  cancel-in-progress: true
+
+# GITHUB_TOKEN permission configuration for operations
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: release
+      - name: Merge in main
+        uses: devmasx/merge-branch@v1.4
+        with:
+          type: now
+          from_branch: development
+          target_branch: staging
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: npm
+      - name: Install dependencies
+        run: npm install
+      - name: Build this release
+        run: npm run build
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

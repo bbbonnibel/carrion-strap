@@ -2,6 +2,7 @@ const fs = require("fs-extra");
 const path = require("path");
 const sass = require("sass");
 const package = require("./package.json");
+const prettier = require("@prettier/sync");
 
 const VERSION = package.version.split(".").slice(0, 2).join(".");
 const PATH_RELEASE = path.join(__dirname, "release", VERSION);
@@ -28,7 +29,7 @@ for (const config of files) {
   }
   let style;
   try {
-    style = sass.compile(sourcePath);
+    style = sass.compile(sourcePath, { style: "expanded" });
   } catch (ex) {
     console.error(`Failed to build "${source}". Reason:`, ex);
     break;
@@ -37,6 +38,7 @@ for (const config of files) {
   const outPath = path.join(PATH_RELEASE, out);
   const outFolder = path.join(outPath, "..");
   fs.ensureDirSync(outFolder);
-  fs.writeFileSync(outPath, style.css);
+  const pretty = prettier.format(style.css, { parser: "css" });
+  fs.writeFileSync(outPath, pretty);
   console.log("Created:", out);
 }

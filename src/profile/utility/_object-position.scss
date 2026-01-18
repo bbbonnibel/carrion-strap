@@ -1,4 +1,4 @@
-@include object-position($position) {
+@mixin object-position($position) {
   &,
   & > img {
     object-position: $position;

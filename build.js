@@ -12,7 +12,7 @@ console.log("Building version", VERSION);
 fs.emptyDirSync(PATH_RELEASE);
 
 const files = [
-  { source: "main.scss", out: "main.css" },
+  { source: "profile/main.scss", out: "profile/main.css" },
   { source: "chat/theme.scss", out: "chat/theme.css" },
   // { source: "chat/themes/reset.scss", out: "chat/themes/reset.css" },
 ];

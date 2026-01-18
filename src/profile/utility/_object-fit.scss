@@ -1,4 +1,4 @@
-@include object-fit($fit) {
+@mixin object-fit($fit) {
   &,
   & > img {
     object-fit: $fit;

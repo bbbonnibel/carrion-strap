@@ -1,0 +1,11 @@
+.cs-media-object {
+  display: flex;
+
+  .cs-media-figure {
+    flex-grow: 0;
+  }
+
+  .cs-media-body {
+    flex: 1;
+  }
+}

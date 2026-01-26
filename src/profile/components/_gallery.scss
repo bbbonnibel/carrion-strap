@@ -1,0 +1,35 @@
+.cs-gallery {
+  --thumb-size: 200px;
+  --space: 20px;
+  --columns: 3;
+  --thumb-aspect-ratio: 1/1;
+  --inner-space: var(--space);
+  --outer-space: var(--space);
+  --image-radius: var(--carrion-image-corner-radius);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(var(--thumb-size), 1fr));
+  gap: var(--inner-space);
+  padding: var(--outer-space);
+  max-width: min(
+    calc((var(--thumb-size) + var(--space)) * var(--columns)),
+    100%
+  );
+
+  > a {
+    width: var(--thumb-size);
+    border-bottom: unset;
+    border-radius: var(--image-radius);
+  }
+
+  img {
+    width: var(--thumb-size);
+    aspect-ratio: var(--thumb-aspect-ratio);
+    border-radius: var(--image-radius);
+    object-fit: cover;
+  }
+}
+
+.cs-gallery-columns-4 {
+  --columns: 4;
+}

@@ -1,0 +1,21 @@
+details:open + .cs-if-closed-above {
+  display: none;
+}
+
+details:not(:open) + .cs-if-open-above {
+  display: none;
+}
+
+// Second-order check: let people chain these.
+
+details:open
+  + :is(.cs-if-open-above, .cs-if-closed-above)
+  + .cs-if-closed-above {
+  display: none;
+}
+
+details:not(:open)
+  + :is(.cs-if-open-above, .cs-if-closed-above)
+  + .cs-if-open-above {
+  display: none;
+}

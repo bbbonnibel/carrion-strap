@@ -1,0 +1,21 @@
+.cs-static,
+.cs-censor.cs-static {
+  --color-1: #999;
+  --color-2: #333;
+  background: repeating-radial-gradient(
+      circle at 17% 23%,
+      var(--color-1),
+      var(--color-2) 0.00085px
+    )
+    center;
+  animation: static-slide 5s linear infinite;
+}
+
+@keyframes static-slide {
+  from {
+    background-size: 100% 100%;
+  }
+  to {
+    background-size: 200% 200%;
+  }
+}

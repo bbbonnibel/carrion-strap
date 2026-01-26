@@ -1,0 +1,43 @@
+.cs-italic {
+  font-style: italic;
+}
+
+.cs-unitalic {
+  font-style: normal;
+}
+
+.cs-bold {
+  font-weight: bold;
+}
+
+.cs-unbold {
+  font-weight: normal;
+}
+
+.cs-superthin {
+  font-weight: 100;
+}
+
+.cs-superbold {
+  font-weight: 900;
+}
+
+$weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@each $weight in $weights {
+  .cs-weight-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+.cs-smallcaps {
+  font-variant: small-caps;
+}
+
+.cs-unsmallcaps {
+  font-variant: normal;
+}
+
+.cs-underline {
+  text-decoration: underline;
+}

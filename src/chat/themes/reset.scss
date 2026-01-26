@@ -1,0 +1,26 @@
+@use "../theme";
+
+@mixin chat-message-reset {
+  background: unset;
+  border: unset;
+
+  .message-sender {
+    font-style: var(#{$varname}-body-font-style);
+    font-weight: var(#{$varname}-body-font-weight);
+    font-variant: var(#{$varname}-body-font-variant);
+  }
+
+  .message-body {
+    color: var(#{$varname}-body-color);
+    font-style: var(#{$varname}-body-font-style);
+    font-weight: var(#{$varname}-body-font-weight);
+    font-variant: var(#{$varname}-body-font-variant);
+  }
+}
+
+:root {
+  @include chat-message-reset(--message);
+  @include chat-message-reset(--message-own);
+  @include chat-message-reset(--message-mentioned);
+  @include chat-message-reset(--message-system);
+}

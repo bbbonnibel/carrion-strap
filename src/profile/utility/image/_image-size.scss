@@ -1,0 +1,18 @@
+@use "../../../func/math";
+@use "mixin";
+
+.cs-img-square {
+  @include mixin.img {
+    aspect-ratio: 1/1;
+    border-radius: var(--carrion-image-corner-radius);
+    object-fit: cover;
+  }
+}
+
+.cs-img-circle {
+  @include mixin.img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}

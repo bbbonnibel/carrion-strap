@@ -1,0 +1,20 @@
+@use "sass:list";
+
+// Create a list that iterates $min through $max in steps of $step.
+// This includes $min and $max.
+//
+// example: range(10, 20, 2) // 10 12 14 16 18 20
+@function range($min, $max, $step: 1) {
+  $list: $min;
+  $i: $min;
+
+  @while (true) {
+    $i: $i + $step;
+
+    @if ($i > $max) {
+      @return $list;
+    }
+
+    $list: list.append($list, $i);
+  }
+}

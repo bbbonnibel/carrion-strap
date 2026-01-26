@@ -1,0 +1,28 @@
+img {
+  margin: unset;
+}
+
+.swatch {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  outline: 1px solid white;
+  color: 1px solid black;
+  border-radius: 2px;
+  background: currentColor;
+  margin-left: 2px;
+  transform: translateY(2px);
+}
+
+.example-image {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  border: 1px dashed currentColor;
+  background: color-mix(in srgb, currentColor, transparent 85%);
+}
+
+.pre-example-image {
+  height: 180px;
+  border: 1px dashed currentColor;
+}

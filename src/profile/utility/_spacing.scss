@@ -1,0 +1,29 @@
+.cs-no-margin {
+  margin: 0;
+}
+
+.cs-no-padding {
+  padding: 0;
+}
+
+.cs-no-spacing {
+  margin: 0;
+  padding: 0;
+}
+
+$directions: top right bottom left;
+
+@each $d in $directions {
+  .cs-no-#{$d}-margin {
+    margin-#{$d}: 0;
+  }
+
+  .cs-no-#{$d}-padding {
+    padding-#{$d}: 0;
+  }
+
+  .cs-no-#{$d}-spacing {
+    margin-#{$d}: 0;
+    padding-#{$d}: 0;
+  }
+}

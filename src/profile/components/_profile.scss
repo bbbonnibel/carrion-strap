@@ -1,0 +1,41 @@
+.cs-profile {
+  --spacing: 20px;
+  --picture-min-width: 300px;
+  --picture-max-width: 500px;
+  --main-min-width: 300px;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  gap: var(--spacing);
+  margin: var(--spacing) auto;
+
+  > .cs-first,
+  > .cs-left {
+    order: 0;
+  }
+
+  > .cs-second,
+  > .cs-right {
+    order: 1;
+  }
+
+  > .cs-picture {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-width: var(--picture-min-width);
+
+    img {
+      max-width: 100%;
+      width: var(--picture-max-width);
+    }
+  }
+
+  > .cs-main {
+    flex: 2;
+    min-width: var(--main-min-width);
+    max-width: 700px;
+  }
+}

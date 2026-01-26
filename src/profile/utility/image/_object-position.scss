@@ -1,0 +1,39 @@
+@use "mixin";
+
+@mixin object-position($position) {
+  @include mixin.img {
+    object-position: $position;
+  }
+}
+
+// Edges, center
+
+$positions: top, left, bottom, right, center;
+
+@each $position in $positions {
+  .cs-op-#{$position} {
+    @include object-position($position);
+  }
+}
+
+// Corners
+
+.cs-op-top-left,
+.cs-op-left-top {
+  @include object-position(top left);
+}
+
+.cs-op-top-right,
+.cs-op-right-top {
+  @include object-position(top right);
+}
+
+.cs-op-bottom-left,
+.cs-op-left-bottom {
+  @include object-position(bottom left);
+}
+
+.cs-op-bottom-right,
+.cs-op-right-bottom {
+  @include object-position(bottom right);
+}

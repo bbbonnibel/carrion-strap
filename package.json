@@ -1,0 +1,37 @@
+{
+  "name": "carrion-strap",
+  "version": "0.0.0",
+  "description": "CSS Styling for Carrion",
+  "main": "index.js",
+  "type": "commonjs",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "docs": "npx docmd build",
+    "docs:dev": "npm run build && npx docmd dev",
+    "release": "npm run build && npm run docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbbonnibel/carrion-strap.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/bbbonnibel/carrion-strap/issues"
+  },
+  "homepage": "https://github.com/bbbonnibel/carrion-strap#readme",
+  "dependencies": {
+    "sass": "^1.97.2"
+  },
+  "devDependencies": {
+    "@mgks/docmd": "^0.3.8",
+    "@prettier/sync": "^0.6.1",
+    "autoprefixer": "^10.4.23",
+    "fs-extra": "^11.3.3",
+    "prettier": "^3.8.0"
+  }
+}

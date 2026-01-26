@@ -1,0 +1,35 @@
+.cs-flex {
+  display: flex;
+}
+
+.cs-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+$aligns:
+  flex-start, flex-end, center, stretch, space-between, space-around,
+  space-evenly;
+
+@each $align in $aligns {
+  .cs-flex-align-#{$align} {
+    align-items: #{$align};
+  }
+}
+
+@each $align in $aligns {
+  .cs-flex-justify-#{$align} {
+    justify-content: #{$align};
+  }
+}
+
+.cs-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

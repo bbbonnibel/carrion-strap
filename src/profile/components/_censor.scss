@@ -1,0 +1,17 @@
+:root {
+  --cs-censor-background: currentColor;
+}
+
+.cs-censor {
+  display: inline-block;
+  height: 2.5ex;
+  line-height: 1em;
+  text-indent: 0;
+  margin-bottom: -0.5ex;
+  overflow: hidden;
+  background: var(--cs-censor-background);
+
+  &.cs-static {
+    color: transparent;
+  }
+}

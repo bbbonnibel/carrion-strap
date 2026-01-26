@@ -1,0 +1,6 @@
+@mixin img {
+  &:is(img),
+  & > img {
+    @content;
+  }
+}

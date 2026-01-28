@@ -1,6 +1,6 @@
 ---
 title: "An introduction to carrion-strap"
-description: "Documentation for the carrion-strap CSS library"
+description: "carrion-strap is a CSS library for carrion.chat. come get some strap."
 ---
 
 **carrion-strap is a CSS library built for [carrion.chat]. come get some strap.**

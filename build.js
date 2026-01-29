@@ -6,6 +6,13 @@ const package = require("./package.json");
 const autoprefixer = require("autoprefixer");
 const postcss = require("postcss");
 
+const files = [
+  { source: "profile/main.scss", out: "profile/main.css" },
+  { source: "units/main.scss", out: "units.css" },
+  { source: "chat/theme.scss", out: "chat/theme.css" },
+  // { source: "chat/themes/reset.scss", out: "chat/themes/reset.css" },
+];
+
 async function build(buildConfig) {
   const { version, files, folders } = buildConfig;
 
@@ -73,12 +80,6 @@ async function main() {
   const version = getVersion();
 
   console.log("Building carrion-strap version", version.minor);
-
-  const files = [
-    { source: "profile/main.scss", out: "profile/main.css" },
-    { source: "chat/theme.scss", out: "chat/theme.css" },
-    // { source: "chat/themes/reset.scss", out: "chat/themes/reset.css" },
-  ];
 
   const PATH_SRC = "./src";
   const PATH_OUT = "./out";

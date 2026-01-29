@@ -4,8 +4,8 @@
 // This includes $min and $max.
 //
 // example: range(10, 20, 2) // 10 12 14 16 18 20
-@function range($min, $max, $step: 1) {
-  $list: $min;
+@function range($min, $max, $step: 1, $unit: 0) {
+  $list: #{$min + $unit};
   $i: $min;
 
   @while (true) {
@@ -15,6 +15,6 @@
       @return $list;
     }
 
-    $list: list.append($list, $i);
+    $list: list.append($list, #{$i + $unit});
   }
 }

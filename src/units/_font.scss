@@ -1,0 +1,13 @@
+@use "../sass/math";
+
+@each $px in math.range(0, 100, $step: 2) {
+  .cs-font-size-#{$px} {
+    font-size: #{$px};
+  }
+}
+
+@each $pc in math.range(25, 250, 25) {
+  .cs-font-size-#{$pc}pc {
+    font-size: #{$pc + "%"};
+  }
+}

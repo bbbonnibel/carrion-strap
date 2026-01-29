@@ -1,0 +1,72 @@
+@use "../sass/math";
+@use "sass:list";
+
+$special: auto;
+$pixels: math.range(0, 100, $step: 5);
+$values: list.join($special, $pixels);
+
+@each $v in $values {
+  /*
+  spacing at #{$v}
+  */
+
+  .cs-margin-#{$v} {
+    margin: #{$v};
+  }
+
+  .cs-margin-h-#{$v} {
+    margin-left: #{$v};
+    margin-right: #{$v};
+  }
+
+  .cs-margin-v-#{$v} {
+    margin-top: #{$v};
+    margin-bottom: #{$v};
+  }
+
+  .cs-margin-top-#{$v} {
+    margin-top: #{$v};
+  }
+
+  .cs-margin-right-#{$v} {
+    margin-right: #{$v};
+  }
+
+  .cs-margin-bottom-#{$v} {
+    margin-bottom: #{$v};
+  }
+
+  .cs-margin-left-#{$v} {
+    margin-left: #{$v};
+  }
+
+  .cs-padding-#{$v} {
+    padding: #{$v};
+  }
+
+  .cs-padding-h-#{$v} {
+    padding-left: #{$v};
+    padding-right: #{$v};
+  }
+
+  .cs-padding-v-#{$v} {
+    padding-top: #{$v};
+    padding-bottom: #{$v};
+  }
+
+  .cs-padding-top-#{$v} {
+    padding-top: #{$v};
+  }
+
+  .cs-padding-right-#{$v} {
+    padding-right: #{$v};
+  }
+
+  .cs-padding-bottom-#{$v} {
+    padding-bottom: #{$v};
+  }
+
+  .cs-padding-left-#{$v} {
+    padding-left: #{$v};
+  }
+}

@@ -76,6 +76,18 @@ module.exports = {
       ],
     },
     {
+      title: "Extra modules",
+      icon: "cog",
+      collapsible: true,
+      children: [
+        {
+          title: "Units",
+          icon: "ruler",
+          path: "/extra/units",
+        },
+      ],
+    },
+    {
       title: "Chat",
       icon: "message-circle-heart",
       path: "/chat",

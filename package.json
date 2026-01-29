@@ -10,8 +10,9 @@
   },
   "scripts": {
     "build": "node build.js",
+    "watch": "npx nodemon  --watch src --ext 'scss' --exec npm build",
     "docs": "npx docmd build",
-    "docs:dev": "npm run build && npx docmd dev",
+    "dev": "npm run build && npx docmd dev",
     "release": "npm run build && npm run docs"
   },
   "repository": {
@@ -32,6 +33,7 @@
     "@prettier/sync": "^0.6.1",
     "autoprefixer": "^10.4.23",
     "fs-extra": "^11.3.3",
+    "nodemon": "^3.1.11",
     "prettier": "^3.8.0"
   }
 }

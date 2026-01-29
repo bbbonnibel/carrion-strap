@@ -1,6 +1,6 @@
 ---
 title: "Profiles: Advanced Utilities"
-description: "Advanced utility classes"
+description: "carrion-strap is a CSS library for carrion.chat. come get some strap."
 ---
 
 These utility classes are built for those fairly familiar with HTML and CSS, to give them a way to shortcut more detailed behaviours.

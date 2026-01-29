@@ -1,6 +1,6 @@
 ---
 title: "Profiles: Image Utilities"
-description: "Image utility classes"
+description: "carrion-strap is a CSS library for carrion.chat. come get some strap."
 ---
 
 carrion-strap offers a range of classes built specifically for image elements, which is either one of these:

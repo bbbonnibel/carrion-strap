@@ -1,6 +1,6 @@
 ---
 title: "Profiles: Getting started"
-description: "Using carrion-strap for profile development"
+description: "carrion-strap is a CSS library for carrion.chat. come get some strap."
 ---
 
 carrion-strap provides a range of CSS classes you can use to help style your profiles. All of them are prefixed with `cs-`, so they stay out of the way of  your own styling. If you see a class in these docs that starts with `cs-`, that's a class you can use in your code.

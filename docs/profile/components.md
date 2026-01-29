@@ -1,6 +1,6 @@
 ---
 title: "Profiles: Components"
-description: "Structural components for profiles"
+description: "carrion-strap is a CSS library for carrion.chat. come get some strap."
 ---
 
 ## Gallery

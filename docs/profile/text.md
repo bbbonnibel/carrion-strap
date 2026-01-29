@@ -1,6 +1,6 @@
 ---
 title: "Profiles: Text Utilities"
-description: "Text utility classes"
+description: "carrion-strap is a CSS library for carrion.chat. come get some strap."
 ---
 
 carrion-strap offers a range of simple utility classes for common formatting options. Rather than having to write out the same little styles every time, you can use these.

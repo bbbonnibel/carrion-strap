@@ -40,6 +40,8 @@ Set a font size to 44px:
 
 ## Spacing
 
+### Margin/padding on all sides
+
 The `cs-margin-{value}` and `cs-padding-{value}` classes support margin and padding.
 
 Supported values:
@@ -54,6 +56,8 @@ Set an element's margin to 10px, and its padding to 25px:
 <div class="cs-margin-10 cs-padding-25"></div>
 ```
 :::
+
+## Margin/padding on some sides
 
 You can also configure spacing for specific edges with `cs-margin-{edge}-{value}` classes:
 

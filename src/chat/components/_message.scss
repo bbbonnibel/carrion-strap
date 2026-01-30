@@ -40,7 +40,9 @@
   @include chat-message(--message-own);
 }
 
-.message.mentioned {
+// Not yet supporting :hover, so we just overwrite it.
+.message.mentioned,
+.message.mentioned:hover {
   @include chat-message(--message-mentioned);
 }
 

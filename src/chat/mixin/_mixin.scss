@@ -1,7 +1,0 @@
-@mixin all-borders($varname) {
-  border: var(#{$varname});
-  border-left: var(#{$varname}-left);
-  border-top: var(#{$varname}-top);
-  border-right: var(#{$varname}-right);
-  border-bottom: var(#{$varname}-bottom);
-}

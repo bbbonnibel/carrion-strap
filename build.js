@@ -10,6 +10,7 @@ const files = [
   { source: "profile/main.scss", out: "profile/main.css" },
   { source: "units/main.scss", out: "units.css" },
   { source: "chat/theme.scss", out: "chat/theme.css" },
+  { source: "chat/autotheme.scss", out: "chat/autotheme.css" },
   // { source: "chat/themes/reset.scss", out: "chat/themes/reset.css" },
 ];
 

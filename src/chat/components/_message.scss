@@ -1,27 +1,39 @@
 @use "../mixin";
 
-@mixin chat-message($varname) {
-  @include mixin.all-borders(#{$varname}-border);
-  background: var(#{$varname}-background);
-  font-family: var(#{$varname}-font-family);
+@function fancyvar($suffix, $originalvar, $fallbackvar: null) {
+  @if ($fallbackvar != null) {
+    @return var(#{$originalvar}-#{$suffix}, var(#{$fallbackvar}-#{$suffix}));
+  }
+  @return var(#{$originalvar}-#{$suffix});
+}
+
+@mixin chat-message($varname, $fallback: --message) {
+  background: fancyvar(background, $varname, $fallback);
+  font-family: fancyvar(font-family, $varname, $fallback);
+
+  border: fancyvar(border, $varname, $fallback);
+  border-top: fancyvar(border-top, $varname, $fallback);
+  border-right: fancyvar(border-right, $varname, $fallback);
+  border-bottom: fancyvar(border-bottom, $varname, $fallback);
+  border-left: fancyvar(border-left, $varname, $fallback);
 
   .message-time {
-    color: var(#{$varname}-time-color);
-    font-style: var(#{$varname}-time-font-style);
-    font-weight: var(#{$varname}-time-font-weight);
-    font-variant: var(#{$varname}-time-font-variant);
+    color: fancyvar(time-color, $varname, $fallback);
+    font-style: fancyvar(time-font-style, $varname, $fallback);
+    font-weight: fancyvar(time-font-weight, $varname, $fallback);
+    font-variant: fancyvar(time-font-variant, $varname, $fallback);
   }
 
   .message-body {
-    color: var(#{$varname}-color);
-    font-style: var(#{$varname}-font-style);
-    font-weight: var(#{$varname}-font-weight);
-    font-variant: var(#{$varname}-font-variant);
+    color: fancyvar(color, $varname, $fallback);
+    font-style: fancyvar(font-style, $varname, $fallback);
+    font-weight: fancyvar(font-weight, $varname, $fallback);
+    font-variant: fancyvar(font-variant, $varname, $fallback);
   }
 }
 
 .message {
-  @include chat-message(--message);
+  @include chat-message(--message, $fallback: null);
 }
 
 .message.own {
@@ -32,10 +44,14 @@
   @include chat-message(--message-mentioned);
 }
 
-.message.system {
+.message.system-message {
   @include chat-message(--message-system);
 }
 
-.message.action {
-  @include chat-message(--message-system);
+.message.action-message {
+  @include chat-message(--message-action);
+}
+
+.message.reply-target-highlight {
+  @include chat-message(--message-reply);
 }

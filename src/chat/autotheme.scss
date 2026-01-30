@@ -1,0 +1,10 @@
+@use "theme";
+
+// test code
+:root {
+  --color-primary: rgb(239, 179, 119);
+}
+
+:root {
+  --message-background: var(--color-primary);
+}

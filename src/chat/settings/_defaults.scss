@@ -1,0 +1,20 @@
+:root {
+  // Carrion defaults
+  --message-background: var(--carrion-message-background);
+  --message-border-left: var(--carrion-message-border-left);
+  --message-time-color: var(--carrion-message-time-color);
+
+  --message-own-background: var(--carrion-message-own-background);
+
+  --message-action-background: var(--carrion-message-action-background);
+  --message-action-color: var(--carrion-message-action-color);
+  --message-action-font-style: var(--carrion-message-action-font-style);
+
+  --message-reply-background: var(--carrion-message-reply-background);
+  --message-reply-border-left: var(--carrion-message-reply-border-left);
+
+  --message-system-border: var(--carrion-message-system-border);
+  --message-system-border-left: var(--carrion-message-system-border-left);
+  --message-system-color: var(--carrion-message-system-color);
+  --message-system-font-style: var(--carrion-message-system-font-style);
+}

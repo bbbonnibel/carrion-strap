@@ -1,0 +1,19 @@
+:root {
+  --carrion-message-background: #2a2a2a;
+  --carrion-message-border-left: 4px solid;
+  --carrion-message-time-color: #666;
+
+  --carrion-message-own-background: #1a3a5a;
+
+  --carrion-message-action-background: #1a2a1a;
+  --carrion-message-action-color: #aaddaa;
+  --carrion-message-action-font-style: italic;
+
+  --carrion-message-reply-background: rgba(102, 170, 255, 0.15);
+  --carrion-message-reply-border-left: 3px solid #66aaff;
+
+  --carrion-message-system-border: none;
+  --carrion-message-system-border-left: none;
+  --carrion-message-system-color: #e0e0e0;
+  --carrion-message-system-font-style: italic;
+}

@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "node build.js",
-    "watch": "npx nodemon  --watch src --ext 'scss' --exec npm build",
+    "watch": "npx nodemon  --watch src --ext 'scss' --exec npm run build",
     "docs": "npx docmd build",
     "dev": "npm run build && npx docmd dev",
     "release": "npm run build && npm run docs"

@@ -1,0 +1,40 @@
+@use "sass:list";
+
+@function alter($name, $change) {
+  $mode: "add";
+  $value: $change;
+  @if (list.length($change) == 2) {
+    $mode: list.nth($change, 1);
+    $value: list.nth($change, 2);
+  }
+
+  @if ($mode == set) {
+    @return $value;
+  }
+  @if ($mode == add) {
+    @if ($change == 0) {
+      @return $name;
+    }
+
+    @return calc(#{$name} + #{$value});
+  }
+  @if ($mode == sub) {
+    @return calc(#{$name} - #{$value});
+  }
+  @if ($mode == mul) {
+    @return calc(#{$name} * #{$value});
+  }
+  @if ($mode == div) {
+    @return calc(#{$name} / #{$value});
+  }
+
+  @return $name;
+}
+
+@function shift($original, $h: 0, $s: 0, $l: 0, $a: 0) {
+  $h0: #{alter(h, $h)};
+  $s0: #{alter(s, $s)};
+  $l0: #{alter(l, $l)};
+  $a0: #{alter(alpha, $a)};
+  @return hsl(from #{$original} $h0 $s0 $l0 #{"/"} $a0);
+}

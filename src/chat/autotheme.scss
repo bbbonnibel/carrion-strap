@@ -1,4 +1,5 @@
-@use "theme";
+@use "../sass/color";
+// @use "theme";
 
 // test code
 :root {
@@ -7,4 +8,5 @@
 
 :root {
   --message-background: var(--color-primary);
+  --foo: #{color.shift(red)};
 }

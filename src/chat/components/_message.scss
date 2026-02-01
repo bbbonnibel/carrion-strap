@@ -1,5 +1,3 @@
-@use "../mixin";
-
 @function fancyvar($suffix, $originalvar, $fallbackvar: null) {
   @if ($fallbackvar != null) {
     @return var(#{$originalvar}-#{$suffix}, var(#{$fallbackvar}-#{$suffix}));

@@ -64,6 +64,11 @@ module.exports = {
           icon: "image",
         },
         {
+          title: "Backgrounds",
+          path: "/profile/background",
+          icon: "paint-roller",
+        },
+        {
           title: "Advanced utilties",
           path: "/profile/advanced",
           icon: "pickaxe",

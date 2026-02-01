@@ -1,0 +1,54 @@
+.cs-bg-dot-grid {
+  --bg-dot-size: 5px;
+  --bg-back-color: transparent;
+  --bg-dot-color: white;
+  --bg-gap: 30px;
+  --bg-row-gap: var(--bg-gap);
+  --bg-column-gap: var(--bg-gap);
+
+  --bg-offset: 0;
+  --bg-offset-x: var(--bg-offset);
+  --bg-offset-y: var(--bg-offset);
+
+  --dot-halfsize: calc(var(--bg-dot-size) / 2);
+  --dot-position: center;
+
+  background-image: radial-gradient(
+    circle at center,
+    var(--bg-dot-color) var(--dot-halfsize),
+    var(--bg-color) 0
+  );
+  background-size: var(--bg-column-gap) var(--bg-row-gap);
+
+  &.cs-bg-dot-center {
+    background-position: calc(var(--bg-column-gap) / 2)
+      calc(var(--bg-row-gap) / 2);
+  }
+}
+
+.cs-bg-dot-interlace {
+  --bg-dot-size: 1px;
+  --bg-dot-2-size: var(--bg-dot-size);
+
+  --bg-back-color: transparent;
+  --bg-dot-color: black;
+  --bg-dot-2-color: var(--bg-dot-color);
+
+  --bg-gap: 30px;
+  --bg-row-gap: var(--bg-gap);
+  --bg-column-gap: var(--bg-gap);
+
+  --dot-1-size: calc(var(--bg-dot-size) / 2);
+
+  --dot-1-image: radial-gradient(
+    circle at var(--half-dot-size) var(--half-dot-size),
+    var(--bg-dot-color) var(--half-dot-size),
+    var(--bg-color) 0
+  );
+
+  --dot-2-image: radial-gradient(
+    circle at var(--half-dot-size) var(--half-dot-size),
+    var(--bg-dot-color) var(--half-dot-size),
+    var(--bg-color) 0
+  );
+}

@@ -137,6 +137,64 @@ Alternately, you can force either one into either position regardless of which o
 - `cs-first` (or `cs-left`) forces the picture or main element into the first/left position: `<div class="cs-picture cs-first">`
 - `cs-second` (or `cs-right`) forces the picture or main element into the second/right position: `<div class="cs-picture cs-second">`
 
+## Shapes
+
+There's a variety of classes that each offer decorative solid shapes.
+
+Shape size is equal to the current font size (or `1em`) and the current font color. You can set a shape's size and color by setting the `font-size` or `color` styles.
+
+| Shape | Class |
+| - | - |
+| <span class="cs-shape-square"></span> Square | `cs-shape-square` |
+| <span class="cs-shape-circle"></span> Circle | `cs-shape-circle` |
+| <span class="cs-shape-pentagon"></span> Pentagon | `cs-shape-pentagon` |
+| <span class="cs-shape-hexagon"></span> Hexagon | `cs-shape-hexagon` |
+| <span class="cs-shape-octagon"></span> Octagon | `cs-shape-octagon` |
+| <span class="cs-shape-star"></span> Star | `cs-shape-star` |
+| <span class="cs-shape-triangle"></span> Triangle (Equilateral) | `cs-shape-triangle` |
+
+These shapes all point “up” by default. You can also reorient them by combining any of them with `point-right`, `point-down`, or `point-left`.
+
+::: callout info Example
+
+Here's the stars and triangles pointed up, right, down, and left:
+
+<div class="cs-flex" style="gap: 10px; margin: 10px;">
+  <span class="cs-shape-triangle point-up"></span>
+  <span class="cs-shape-triangle point-right"></span>
+  <span class="cs-shape-triangle point-down"></span>
+  <span class="cs-shape-triangle point-left"></span>
+</div>
+
+<div class="cs-flex" style="gap: 10px; margin: 10px;">
+  <span class="cs-shape-star point-up"></span>
+  <span class="cs-shape-star point-right"></span>
+  <span class="cs-shape-star point-down"></span>
+  <span class="cs-shape-star point-left"></span>
+</div>
+
+```html
+<!-- triangles -->
+<div class="cs-flex" style="gap: 10px; margin: 10px;">
+  <span class="cs-shape-triangle point-up"></span>
+  <span class="cs-shape-triangle point-right"></span>
+  <span class="cs-shape-triangle point-down"></span>
+  <span class="cs-shape-triangle point-left"></span>
+</div>
+
+<!-- stars -->
+<div class="cs-flex" style="gap: 10px; margin: 10px;">
+  <span class="cs-shape-star point-up"></span>
+  <span class="cs-shape-star point-right"></span>
+  <span class="cs-shape-star point-down"></span>
+  <span class="cs-shape-star point-left"></span>
+</div>
+```
+
+:::
+
+
+
 ## Censor
 
 The censor component just censors text, like this: <span class="cs-censor">tada!</span>

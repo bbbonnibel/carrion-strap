@@ -7,4 +7,6 @@ carrion-strap offers a range of configurable backgrounds. All of these backgroun
 
 ## Dotted grid
 
-<div class="example-background cs-bg-dotted-grid"></div>
+<div class="example-background cs-bg-dot-grid"></div>
+<div class="example-background cs-bg-dot-grid-corner"></div>
+<div class="example-background cs-bg-dot-interlace"></div>

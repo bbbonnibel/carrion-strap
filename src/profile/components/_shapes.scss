@@ -1,0 +1,90 @@
+%shape {
+  --size: 1em;
+  --color: currentColor;
+  display: inline-block;
+  width: var(--size);
+  height: var(--size);
+
+  &.point-up {
+    transform: rotate(0deg);
+  }
+
+  &.point-left {
+    transform: rotate(-90deg);
+  }
+
+  &.point-right {
+    transform: rotate(90deg);
+  }
+
+  &.point-down {
+    transform: rotate(180deg);
+  }
+}
+
+%solid {
+  @extend %shape;
+
+  background: var(--color);
+}
+
+.cs-shape-square {
+  @extend %solid;
+
+  width: var(--size);
+  aspect-ratio: 1/1;
+}
+
+.cs-shape-circle {
+  @extend %solid;
+
+  width: var(--size);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.cs-shape-triangle,
+.cs-shape-triangle {
+  @extend %solid;
+  clip-path: polygon(50% 8%, 0% 92%, 100% 92%);
+}
+
+.cs-shape-pentagon {
+  @extend %solid;
+  clip-path: polygon(50% 0%, 98% 36%, 80% 90%, 20% 90%, 2% 36%);
+}
+
+.cs-shape-hexagon {
+  @extend %solid;
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+}
+
+.cs-shape-octagon {
+  @extend %solid;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+
+.cs-shape-star {
+  @extend %solid;
+  clip-path: polygon(
+    50% 0% /* top */,
+    61% 33%,
+    97% 33% /* right */,
+    68% 57%,
+    79% 91% /* br */,
+    50% 70%,
+    21% 91% /* bl */,
+    32% 57%,
+    3% 33% /* left */,
+    39% 33%
+  );
+}

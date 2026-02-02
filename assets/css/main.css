@@ -36,3 +36,32 @@ img {
   height: 180px;
   border: 1px dashed currentColor;
 }
+
+.draft-box {
+  position: relative;
+  font-size: 300px;
+  width: 1em;
+  height: 1em;
+  outline: 1px solid rgba(255 255 255 / 0.5);
+
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    outline: 1px solid rgba(255 255 255 / 0.5);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 25%;
+    border-radius: 50%;
+    outline: 1px solid rgba(255 255 255 / 0.5);
+  }
+}

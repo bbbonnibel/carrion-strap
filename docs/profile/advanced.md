@@ -41,10 +41,9 @@ These must follow **immediately** after a details element. You can chain these t
 This following snippet on carrion:
 
 ```html
-<details>
-  <summary>Try me!</summary>
-  Look below!
-</details>
+::: Try me!
+Look below!
+:::
 
 <div class="cs-if-closed-above">
   The container above is <strong>closed</strong>.

@@ -85,7 +85,7 @@ For more information on the `cs-op` classes used here, see [*Advanced Utilities:
 
 You can use `cs-gallery cs-gallery-columns-4` to default to four columns wide instead of three.
 
-By default, the gallery snippet above is center-aligned with the `cs-block-align-center` class. You can remove that alignment, or specifically set it to left/right with `cs-block-align-left` or `cs-block-align-right`, which will push the gallery to the left or right edge. (See: [*Advanced Utilities: Blocks](../advanced#blocks))
+By default, the gallery snippet above is center-aligned with the `cs-block-align-center` class. You can remove that alignment, or specifically set it to left/right with `cs-block-align-left` or `cs-block-align-right`, which will push the gallery to the left or right edge. (See: [*Advanced Utilities: Blocks*](../advanced#blocks))
 
 
 ## Profile side-by-side structure

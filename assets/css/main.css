@@ -1,3 +1,13 @@
+.main-content > h2 {
+  font-size: 36px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+
+  &:not(:first-child) {
+    margin-top: 60px;
+  }
+}
+
 img {
   margin: unset;
 }

@@ -50,6 +50,13 @@
 
 .message.action-message {
   @include chat-message(--message-action);
+
+  .message-body .dialog {
+    color: var(--message-dialog-color, inherit);
+    font-style: var(--message-dialog-font-style, inherit);
+    font-weight: var(--message-dialog-font-weight, inherit);
+    font-variant: var(--message-dialog-font-variant, inherit);
+  }
 }
 
 .message.reply-target-highlight {

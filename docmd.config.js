@@ -54,17 +54,17 @@ module.exports = {
           icon: "rocket",
         },
         {
-          title: "Text utilties",
+          title: "Text",
           path: "/profile/text",
           icon: "pencil-line",
         },
         {
-          title: "Image utilities",
+          title: "Images",
           path: "/profile/image",
           icon: "image",
         },
         {
-          title: "Advanced utilties",
+          title: "Advanced utilities",
           path: "/profile/advanced",
           icon: "pickaxe",
         },

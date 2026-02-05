@@ -12,7 +12,6 @@ To get started, import carrion-strap's current version at the top of your profil
 ```html
 <style>
 @import url("https://bbbonnibel.github.io/carrion-strap/release/v0/profile/main.css");
-
 /* your own CSS continues */
 </style>
 ```

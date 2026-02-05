@@ -41,8 +41,6 @@ Tell us:
 - If there's things you don't like that we ought to consider changing or fixing.
 - If there's things missing you'd like this library to handle for you.
 
-You can contact this library's maintainer by contacting [Bonnibel], [Stocking], or [Korra].
+You can contact this library's maintainer by contacting [Bonnibel], who will keep an eye on her DMs.
 
 [bonnibel]: https://carrion.chat/character/Bonnibel
-[stocking]: https://carrion.chat/character/Stocking
-[korra]: https://carrion.chat/character/Korra

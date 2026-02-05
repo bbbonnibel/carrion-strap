@@ -16,7 +16,10 @@ To get started, import carrion-strap's current version at the top of your profil
 </style>
 ```
 
-Then you can start applying carrion-strap classes to your profile:
+Then you can start applying carrion-strap classes to your profile.
+
+::: callout info Sample profile
+This profile code uses several basics from carrion-strap. Every class here starting with `cs-` is from this library. You don't need to use all or even most of these.
 
 ```html
 <style>
@@ -59,6 +62,7 @@ h2 {
   </div>
 
 </div>
+:::
 
 There you go!
 

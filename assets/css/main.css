@@ -65,3 +65,28 @@ img {
     outline: 1px solid rgba(255 255 255 / 0.5);
   }
 }
+
+.media-object {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  align-items: top;
+
+  &:has(+ *) {
+    margin-bottom: 24px;
+  }
+}
+
+.media-figure {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.media-content {
+  flex: 1;
+  min-width: 200px;
+
+  & > div > pre {
+    margin-top: unset;
+  }
+}

@@ -91,44 +91,74 @@ By default, the gallery snippet above is center-aligned with the `cs-block-align
 
 To spoilerize images, wrap your images in an element with the `cs-image-spoiler-box` class.
 
-```html
-<div class="cs-image-spoiler-box">
-  <img src="/assets/images/she-ra.png">
-</div>
-```
+<div class="media-object">
+  <div class="media-figure">
+    <div class="cs-image-spoiler-box">
+      <img style="height: 150px;" src="/assets/images/she-ra.png">
+    </div>
+  </div>
 
-<div class="cs-image-spoiler-box">
-  <img style="height: 150px;" src="/assets/images/she-ra.png">
+  <div class="media-content">
+
+  ```html
+  <div class="cs-image-spoiler-box">
+    <img src="/assets/images/she-ra.png">
+  </div>
+  ```
+
+  </div>
 </div>
+
+::: callout tip Usage with galleries
+If you're building a [Gallery](#gallery), you can apply this class to the `<a>` element.
+:::
+
 
 ### Obfuscation with stripes
 
 Add the `cs-stripes` class to obfuscate the image further with stripes.
 
-```html
-<div class="cs-image-spoiler-box cs-stripes">
-  <img src="/assets/images/she-ra.png">
-</div>
-```
+<div class="media-object">
+  <div class="media-figure">
+    <div class="cs-image-spoiler-box cs-stripes">
+      <img style="height: 150px;" src="/assets/images/she-ra.png">
+    </div>
+  </div>
 
-<div class="cs-image-spoiler-box cs-stripes">
-  <img style="height: 150px;" src="/assets/images/she-ra.png">
+  <div class="media-content">
+
+  ```html
+  <div class="cs-image-spoiler-box cs-stripes">
+    <img src="/assets/images/she-ra.png">
+  </div>
+  ```
+
+  </div>
 </div>
+
 
 ### Content warning
 
-Apply a content-warning to the image by including a `cs-content-warning` element inside the `cs-image-spoiler-box`.
+Apply a content-warning to the image by including a `cs-content-warning` element inside the `cs-image-spoiler-box`. You can do it with or without stripes.
 
-```html
-<div class="cs-image-spoiler-box cs-stripes">
-  <img src="/assets/images/she-ra.png">
-  <div class="cs-content-warning">Content warning</div>
-</div>
-```
+<div class="media-object">
+  <div class="media-figure">
+    <div class="cs-image-spoiler-box cs-stripes">
+      <img style="height: 150px;" src="/assets/images/she-ra.png">
+      <div class="cs-content-warning">Content warning</div>
+    </div>
+  </div>
 
-<div class="cs-image-spoiler-box cs-stripes">
-  <img style="height: 150px;" src="/assets/images/she-ra.png">
-  <div class="cs-content-warning">Content warning</div>
+  <div class="media-content">
+
+  ```html
+  <div class="cs-image-spoiler-box cs-stripes">
+    <img src="/assets/images/she-ra.png">
+    <div class="cs-content-warning">Content warning</div>
+  </div>
+  ```
+
+  </div>
 </div>
 
 

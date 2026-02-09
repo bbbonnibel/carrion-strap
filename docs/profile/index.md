@@ -21,7 +21,7 @@ Then you can start applying carrion-strap classes to your profile.
 ::: callout info Sample profile
 This profile code uses several basics from carrion-strap. Every class here starting with `cs-` is from this library. You don't need to use all or even most of these.
 
-This sample uses the [profile side-by-side component](/carrion-strap/profile/components#profile-side-by-side-structure), several [text classes](/carrion-strap/profile/text), and a [spacing class](./profile/advanced#spacing)
+This sample uses the [profile side-by-side component](/carrion-strap/profile/components#profile-side-by-side-structure), several [text classes](/carrion-strap/profile/text), and a [spacing class](/carrion-strap/profile/advanced#spacing)
 
 ```html
 <style>

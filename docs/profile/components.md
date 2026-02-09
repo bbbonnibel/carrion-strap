@@ -109,8 +109,9 @@ To spoilerize images, wrap your images in an element with the `cs-image-spoiler-
   </div>
 </div>
 
-::: callout tip Usage with galleries
-If you're building a [Gallery](#gallery), you can apply this class to the `<a>` element.
+::: callout tip Compatibility with other features
+- If you're building a [Gallery](#gallery), you can apply this class to the `<a>` element.
+- If you're using `cs-img-circle` or `cs-img-square`, apply that class to the `cs-image-spoiler-box`, not the image inside.
 :::
 
 

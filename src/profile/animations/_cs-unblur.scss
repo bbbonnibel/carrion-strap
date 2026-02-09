@@ -1,0 +1,10 @@
+// This is an internal class. Don't use it.
+@keyframes cs__unblur {
+  0% {
+    filter: blur(var(--blur));
+  }
+
+  100% {
+    filter: blur(0px);
+  }
+}

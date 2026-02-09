@@ -11,7 +11,7 @@
   --unblur-time: 0.1s;
 
   &:hover img {
-    animation-name: cs-image-spoiler-box-fade-in;
+    animation-name: cs__unblur;
     animation-timing-function: linear;
     animation-duration: var(--unblur-time);
     animation-iteration-count: 1;
@@ -73,15 +73,5 @@
   &:hover .cs-content-warning {
     opacity: 0;
     transition: opacity var(--unblur-time) linear;
-  }
-}
-
-@keyframes cs-image-spoiler-box-fade-in {
-  0% {
-    filter: blur(var(--blur));
-  }
-
-  100% {
-    filter: blur(0px);
   }
 }

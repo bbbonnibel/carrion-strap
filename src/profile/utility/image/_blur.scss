@@ -1,0 +1,13 @@
+.cs-img-blur-until-hover {
+  --blur: 5px;
+  --unblur-time: 0.1s;
+  filter: blur(var(--blur));
+
+  &:hover {
+    animation-name: cs__unblur;
+    animation-timing-function: linear;
+    animation-duration: var(--unblur-time);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}

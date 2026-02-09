@@ -36,7 +36,6 @@ One advantage of this is that you can apply an image class _once_ to _multiple_ 
 </div>
 ```
 
-
 ## Image shape
 
 You can force images to follow a specific shape. When you do this, you only need to specify a width _or_ height property if you want to control image sizing, not both.
@@ -52,7 +51,7 @@ This automatically applies _contain_ to the image, which you can override with a
 Here's an image of She-Ra:
 
 ```html
-<img style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
+<img src="/carrion-strap/assets/images/she-ra.png">
 ```
 
 <img style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
@@ -60,12 +59,25 @@ Here's an image of She-Ra:
 We can turn it into a circular shape with `cs-img-circle`:
 
 ```html
-<img class="cs-img-circle" style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
+<img class="cs-img-circle" src="/carrion-strap/assets/images/she-ra.png">
 ```
 
 <img class="cs-img-circle" style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
 
 :::
+
+## Blur when un-hovered
+
+The `cs-img-blur-until-hover` class will blur an element until it's hovered over.
+
+The blur unavoidably spills outside the bounds of the image slightly. Browsers don't give us a way to prevent that from happening straightforwardly. For more advanced blur behaviour, including preventing this blur from spilling, see [_Components: Image spoiler box_](./components/#image-spoiler-box).
+
+```html
+<img class="cs-img-blur-until-hover" src="/carrion-strap/assets/images/she-ra.png">
+```
+
+<img class="cs-img-blur-until-hover" style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
+
 
 ## Object fit
 

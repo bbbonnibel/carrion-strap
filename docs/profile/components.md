@@ -83,9 +83,83 @@ For more information on the `cs-op` classes used here, see [*Advanced Utilities:
 
 ### Configuring your gallery
 
-You can use `cs-gallery cs-gallery-columns-4` to default to four columns wide instead of three.
+Use `cs-gallery cs-gallery-columns-4` to default to four columns wide instead of three.
 
 By default, the gallery snippet above is center-aligned with the `cs-block-align-center` class. You can remove that alignment, or specifically set it to left/right with `cs-block-align-left` or `cs-block-align-right`, which will push the gallery to the left or right edge. (See: [*Advanced Utilities: Blocks*](../advanced#blocks))
+
+## Image spoiler box
+
+To spoilerize images, wrap your images in an element with the `cs-image-spoiler-box` class.
+
+<div class="media-object">
+  <div class="media-figure">
+    <div class="cs-image-spoiler-box">
+      <img style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
+    </div>
+  </div>
+
+  <div class="media-content">
+
+  ```html
+  <div class="cs-image-spoiler-box">
+    <img src="/carrion-strap/assets/images/she-ra.png">
+  </div>
+  ```
+
+  </div>
+</div>
+
+::: callout tip Usage with galleries
+If you're building a [Gallery](#gallery), you can apply this class to the `<a>` element.
+:::
+
+
+### Obfuscation with stripes
+
+Add the `cs-stripes` class to obfuscate the image further with stripes.
+
+<div class="media-object">
+  <div class="media-figure">
+    <div class="cs-image-spoiler-box cs-stripes">
+      <img style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
+    </div>
+  </div>
+
+  <div class="media-content">
+
+  ```html
+  <div class="cs-image-spoiler-box cs-stripes">
+    <img src="/carrion-strap/assets/images/she-ra.png">
+  </div>
+  ```
+
+  </div>
+</div>
+
+
+### Content warning
+
+Apply a content-warning to the image by including a `cs-content-warning` element inside the `cs-image-spoiler-box`. You can do it with or without stripes.
+
+<div class="media-object">
+  <div class="media-figure">
+    <div class="cs-image-spoiler-box cs-stripes">
+      <img style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
+      <div class="cs-content-warning">Content warning</div>
+    </div>
+  </div>
+
+  <div class="media-content">
+
+  ```html
+  <div class="cs-image-spoiler-box cs-stripes">
+    <img src="/carrion-strap/assets/images/she-ra.png">
+    <div class="cs-content-warning">Content warning</div>
+  </div>
+  ```
+
+  </div>
+</div>
 
 
 ## Profile side-by-side structure

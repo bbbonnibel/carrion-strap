@@ -94,7 +94,7 @@ To spoilerize images, wrap your images in an element with the `cs-image-spoiler-
 <div class="media-object">
   <div class="media-figure">
     <div class="cs-image-spoiler-box">
-      <img style="height: 150px;" src="/assets/images/she-ra.png">
+      <img style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
     </div>
   </div>
 
@@ -102,7 +102,7 @@ To spoilerize images, wrap your images in an element with the `cs-image-spoiler-
 
   ```html
   <div class="cs-image-spoiler-box">
-    <img src="/assets/images/she-ra.png">
+    <img src="/carrion-strap/assets/images/she-ra.png">
   </div>
   ```
 
@@ -121,7 +121,7 @@ Add the `cs-stripes` class to obfuscate the image further with stripes.
 <div class="media-object">
   <div class="media-figure">
     <div class="cs-image-spoiler-box cs-stripes">
-      <img style="height: 150px;" src="/assets/images/she-ra.png">
+      <img style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
     </div>
   </div>
 
@@ -129,7 +129,7 @@ Add the `cs-stripes` class to obfuscate the image further with stripes.
 
   ```html
   <div class="cs-image-spoiler-box cs-stripes">
-    <img src="/assets/images/she-ra.png">
+    <img src="/carrion-strap/assets/images/she-ra.png">
   </div>
   ```
 
@@ -144,7 +144,7 @@ Apply a content-warning to the image by including a `cs-content-warning` element
 <div class="media-object">
   <div class="media-figure">
     <div class="cs-image-spoiler-box cs-stripes">
-      <img style="height: 150px;" src="/assets/images/she-ra.png">
+      <img style="height: 150px;" src="/carrion-strap/assets/images/she-ra.png">
       <div class="cs-content-warning">Content warning</div>
     </div>
   </div>
@@ -153,7 +153,7 @@ Apply a content-warning to the image by including a `cs-content-warning` element
 
   ```html
   <div class="cs-image-spoiler-box cs-stripes">
-    <img src="/assets/images/she-ra.png">
+    <img src="/carrion-strap/assets/images/she-ra.png">
     <div class="cs-content-warning">Content warning</div>
   </div>
   ```

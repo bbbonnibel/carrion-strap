@@ -1,0 +1,8 @@
+.cs-img-blur-until-hover {
+  --blur: 5px;
+  filter: blur(var(--blur));
+
+  &:hover {
+    filter: blur(0);
+  }
+}

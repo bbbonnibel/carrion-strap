@@ -34,7 +34,13 @@ Supported values:
 Set a font size to 44px:
 
 ```html
-<span class="cs-font-size-44px">Bigger text!</span>
+<span class="cs-font-size-44">Bigger text!</span>
+```
+
+Set a font size to 150%:
+
+```html
+<span class="cs-font-size-150pc">Bigger text (by percentage)!</span>
 ```
 :::
 

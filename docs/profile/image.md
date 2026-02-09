@@ -36,7 +36,6 @@ One advantage of this is that you can apply an image class _once_ to _multiple_ 
 </div>
 ```
 
-
 ## Image shape
 
 You can force images to follow a specific shape. When you do this, you only need to specify a width _or_ height property if you want to control image sizing, not both.

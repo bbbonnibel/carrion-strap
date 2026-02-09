@@ -87,6 +87,21 @@ You can use `cs-gallery cs-gallery-columns-4` to default to four columns wide in
 
 By default, the gallery snippet above is center-aligned with the `cs-block-align-center` class. You can remove that alignment, or specifically set it to left/right with `cs-block-align-left` or `cs-block-align-right`, which will push the gallery to the left or right edge. (See: [*Advanced Utilities: Blocks*](../advanced#blocks))
 
+## Image spoiler box
+
+To spoilerize images, wrap your images in an element with the `cs-image-spoiler-box` class.
+
+```html
+<div class="cs-image-spoiler-box">
+  <img src="/assets/images/she-ra.png">
+</div>
+```
+
+<div class="cs-image-spoiler-box">
+  <img style="height: 150px;" src="/assets/images/she-ra.png">
+</div>
+
+
 
 ## Profile side-by-side structure
 

@@ -83,7 +83,7 @@ For more information on the `cs-op` classes used here, see [*Advanced Utilities:
 
 ### Configuring your gallery
 
-You can use `cs-gallery cs-gallery-columns-4` to default to four columns wide instead of three.
+Use `cs-gallery cs-gallery-columns-4` to default to four columns wide instead of three.
 
 By default, the gallery snippet above is center-aligned with the `cs-block-align-center` class. You can remove that alignment, or specifically set it to left/right with `cs-block-align-left` or `cs-block-align-right`, which will push the gallery to the left or right edge. (See: [*Advanced Utilities: Blocks*](../advanced#blocks))
 
@@ -101,6 +101,35 @@ To spoilerize images, wrap your images in an element with the `cs-image-spoiler-
   <img style="height: 150px;" src="/assets/images/she-ra.png">
 </div>
 
+### Obfuscation with stripes
+
+Add the `cs-stripes` class to obfuscate the image further with stripes.
+
+```html
+<div class="cs-image-spoiler-box cs-stripes">
+  <img src="/assets/images/she-ra.png">
+</div>
+```
+
+<div class="cs-image-spoiler-box cs-stripes">
+  <img style="height: 150px;" src="/assets/images/she-ra.png">
+</div>
+
+### Content warning
+
+Apply a content-warning to the image by including a `cs-content-warning` element inside the `cs-image-spoiler-box`.
+
+```html
+<div class="cs-image-spoiler-box cs-stripes">
+  <img src="/assets/images/she-ra.png">
+  <div class="cs-content-warning">Content warning</div>
+</div>
+```
+
+<div class="cs-image-spoiler-box cs-stripes">
+  <img style="height: 150px;" src="/assets/images/she-ra.png">
+  <div class="cs-content-warning">Content warning</div>
+</div>
 
 
 ## Profile side-by-side structure

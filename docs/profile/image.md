@@ -70,7 +70,7 @@ We can turn it into a circular shape with `cs-img-circle`:
 
 The `cs-img-blur-unless-hover` class will blur an element unless it's hovered over.
 
-The blur unavoidably spills outside the bounds of the image slightly. Browsers don't give us a way to prevent that from happening straightforwardly. For more advanced blur behaviour, including preventing this blur from spilling, see [_Components: Image spoiler box_](./components/#image-spoiler-box).
+The blur unavoidably spills outside the bounds of the image slightly. Browsers don't give us a way to prevent that from happening straightforwardly. For more advanced blur behaviour, including preventing this blur from spilling, see [_Components: Image spoiler box_](/carrion-strap/profile/components/#image-spoiler-box).
 
 ```html
 <img class="cs-img-blur-unless-hover" src="/carrion-strap/assets/images/she-ra.png">

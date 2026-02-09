@@ -52,23 +52,26 @@
   }
 
   .cs-content-warning {
-    display: block;
     position: absolute;
     left: 0;
     right: 0;
     top: 50%;
-    color: var(--warning-color);
     transform: translateY(-50%);
+
+    color: var(--warning-color);
+    display: block;
+    font-weight: bold;
     padding: 0 20%;
     text-align: center;
+    user-select: none;
     z-index: 2;
+
     text-shadow:
       0 0 2px var(--shadow-color),
       -2px 0 2px var(--shadow-color),
       2px 0 2px var(--shadow-color),
       0 -2px 2px var(--shadow-color),
       0 2px 2px var(--shadow-color);
-    font-weight: bold;
   }
 
   &:hover .cs-content-warning {

@@ -11,62 +11,62 @@ $values: list.join($special, $pixels);
   */
 
   .cs-margin-#{$v} {
-    margin: #{$v};
+    margin: #{$v}px;
   }
 
   .cs-margin-h-#{$v} {
-    margin-left: #{$v};
-    margin-right: #{$v};
+    margin-left: #{$v}px;
+    margin-right: #{$v}px;
   }
 
   .cs-margin-v-#{$v} {
-    margin-top: #{$v};
-    margin-bottom: #{$v};
+    margin-top: #{$v}px;
+    margin-bottom: #{$v}px;
   }
 
   .cs-margin-top-#{$v} {
-    margin-top: #{$v};
+    margin-top: #{$v}px;
   }
 
   .cs-margin-right-#{$v} {
-    margin-right: #{$v};
+    margin-right: #{$v}px;
   }
 
   .cs-margin-bottom-#{$v} {
-    margin-bottom: #{$v};
+    margin-bottom: #{$v}px;
   }
 
   .cs-margin-left-#{$v} {
-    margin-left: #{$v};
+    margin-left: #{$v}px;
   }
 
   .cs-padding-#{$v} {
-    padding: #{$v};
+    padding: #{$v}px;
   }
 
   .cs-padding-h-#{$v} {
-    padding-left: #{$v};
-    padding-right: #{$v};
+    padding-left: #{$v}px;
+    padding-right: #{$v}px;
   }
 
   .cs-padding-v-#{$v} {
-    padding-top: #{$v};
-    padding-bottom: #{$v};
+    padding-top: #{$v}px;
+    padding-bottom: #{$v}px;
   }
 
   .cs-padding-top-#{$v} {
-    padding-top: #{$v};
+    padding-top: #{$v}px;
   }
 
   .cs-padding-right-#{$v} {
-    padding-right: #{$v};
+    padding-right: #{$v}px;
   }
 
   .cs-padding-bottom-#{$v} {
-    padding-bottom: #{$v};
+    padding-bottom: #{$v}px;
   }
 
   .cs-padding-left-#{$v} {
-    padding-left: #{$v};
+    padding-left: #{$v}px;
   }
 }

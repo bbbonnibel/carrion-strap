@@ -2,7 +2,7 @@
 
 @each $px in math.range(0, 100, $step: 2) {
   .cs-font-size-#{$px} {
-    font-size: #{$px};
+    font-size: #{$px}px;
   }
 }
 

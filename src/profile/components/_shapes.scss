@@ -5,19 +5,19 @@
   width: var(--size);
   height: var(--size);
 
-  &.point-up {
+  &.cs-point-up {
     transform: rotate(0deg);
   }
 
-  &.point-left {
+  &.cs-point-left {
     transform: rotate(-90deg);
   }
 
-  &.point-right {
+  &.cs-point-right {
     transform: rotate(90deg);
   }
 
-  &.point-down {
+  &.cs-point-down {
     transform: rotate(180deg);
   }
 }

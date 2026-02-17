@@ -1,0 +1,41 @@
+.cs-profile-background {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+
+  img {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .cs-full-size,
+  .cs-left,
+  .cs-right {
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .cs-full {
+    inset: 0;
+  }
+
+  .cs-left,
+  .cs-right {
+    top: 0;
+    bottom: 0;
+  }
+
+  .cs-left {
+    left: 0;
+    width: 55%;
+    mask-image: linear-gradient(to right, white, white 90%, transparent);
+  }
+
+  .cs-right {
+    right: 0;
+    width: 55%;
+    mask-image: linear-gradient(to left, white, white 80%, transparent);
+  }
+}

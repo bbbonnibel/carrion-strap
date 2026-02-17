@@ -13,12 +13,13 @@
   .cs-left,
   .cs-right {
     position: absolute;
-    height: 100vh;
     object-fit: cover;
+    height: 100vh;
   }
 
   .cs-full {
     inset: 0;
+    width: 100vw;
   }
 
   .cs-left,

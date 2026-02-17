@@ -39,4 +39,8 @@
     width: 55%;
     mask-image: linear-gradient(to left, white, white 80%, transparent);
   }
+
+  > img:only-of-type {
+    @extend .cs-full;
+  }
 }

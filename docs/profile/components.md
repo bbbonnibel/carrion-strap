@@ -87,6 +87,55 @@ Use `cs-gallery cs-gallery-columns-4` to default to four columns wide instead of
 
 By default, the gallery snippet above is center-aligned with the `cs-block-align-center` class. You can remove that alignment, or specifically set it to left/right with `cs-block-align-left` or `cs-block-align-right`, which will push the gallery to the left or right edge. (See: [*Advanced Utilities: Blocks*](../advanced#blocks))
 
+## Profile side-by-side structure
+
+One of the common profile patterns is to display text and a single large inline image side-by-side. This component is designed to do that. If the screen gets too narrow, the profile will wrap, placing the image above or below the text.
+
+This component uses:
+- `cs-profile` on an element
+- `cs-picture` on a child element that will contain the profile image
+- `cs-main` on another child element that will contain the text and description.
+
+::: callout info Example
+
+<div class="cs-profile">
+
+  <div class="cs-picture">
+    <img src="/carrion-strap/assets/images/skeletor-tall.png">
+  </div>
+
+  <div class="cs-main">
+    <header class="cs-text-align-center">
+      <h2>Your character name!</h2>
+    </header>
+  </div>
+
+</div>
+:::
+
+<!-- -->
+
+```html
+<div class="cs-profile">
+
+  <div class="cs-picture">
+    <img src="(Your image URL here)">
+  </div>
+
+  <div class="cs-main">
+    (Your profile text here)
+  </div>
+
+</div>
+```
+
+You can put the picture or main element either way around. Whichever appears first will appear on the left.
+
+Alternately, you can force either one into either position regardless of which order they appear in your code:
+
+- `cs-first` (or `cs-left`) forces the picture or main element into the first/left position: `<div class="cs-picture cs-first">`
+- `cs-second` (or `cs-right`) forces the picture or main element into the second/right position: `<div class="cs-picture cs-second">`
+
 ## Image spoiler box
 
 To spoilerize images, wrap your images in an element with the `cs-image-spoiler-box` class.
@@ -161,56 +210,6 @@ Apply a content-warning to the image by including a `cs-content-warning` element
 
   </div>
 </div>
-
-
-## Profile side-by-side structure
-
-One of the common profile patterns is to display text and a single large inline image side-by-side. This component is designed to do that. If the screen gets too narrow, the profile will wrap, placing the image above or below the text.
-
-This component uses:
-- `cs-profile` on an element
-- `cs-picture` on a child element that will contain the profile image
-- `cs-main` on another child element that will contain the text and description.
-
-::: callout info Example
-
-<div class="cs-profile">
-
-  <div class="cs-picture">
-    <img src="/carrion-strap/assets/images/skeletor-tall.png">
-  </div>
-
-  <div class="cs-main">
-    <header class="cs-text-align-center">
-      <h2>Your character name!</h2>
-    </header>
-  </div>
-
-</div>
-:::
-
-<!-- -->
-
-```html
-<div class="cs-profile">
-
-  <div class="cs-picture">
-    <img src="(Your image URL here)">
-  </div>
-
-  <div class="cs-main">
-    (Your profile text here)
-  </div>
-
-</div>
-```
-
-You can put the picture or main element either way around. Whichever appears first will appear on the left.
-
-Alternately, you can force either one into either position regardless of which order they appear in your code:
-
-- `cs-first` (or `cs-left`) forces the picture or main element into the first/left position: `<div class="cs-picture cs-first">`
-- `cs-second` (or `cs-right`) forces the picture or main element into the second/right position: `<div class="cs-picture cs-second">`
 
 ## Shapes
 

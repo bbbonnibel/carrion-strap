@@ -6,9 +6,10 @@
   --inner-space: var(--space);
   --outer-space: var(--space);
   --image-radius: var(--carrion-image-corner-radius);
-  display: grid;
+
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(var(--thumb-size), 1fr));
   gap: var(--inner-space);
   padding: var(--outer-space);
   max-width: min(
@@ -17,6 +18,7 @@
   );
 
   > a {
+    display: flex;
     width: var(--thumb-size);
     border-bottom: unset;
     border-radius: var(--image-radius);
@@ -27,6 +29,7 @@
     aspect-ratio: var(--thumb-aspect-ratio);
     border-radius: var(--image-radius);
     object-fit: cover;
+    margin: 0;
   }
 }
 

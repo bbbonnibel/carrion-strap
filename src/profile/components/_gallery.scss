@@ -13,7 +13,9 @@
   gap: var(--inner-space);
   padding: var(--outer-space);
   max-width: min(
-    calc((var(--thumb-size) + var(--space)) * var(--columns)),
+    calc(
+      (var(--thumb-size) + var(--space)) * var(--columns) + var(--outer-space)
+    ),
     100%
   );
 

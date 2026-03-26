@@ -24,9 +24,8 @@ This profile code uses several basics from carrion-strap. Every class here start
 This sample uses the [profile side-by-side component](/carrion-strap/profile/components#profile-side-by-side-structure), several [text classes](/carrion-strap/profile/text), and a [spacing class](/carrion-strap/profile/advanced#spacing)
 
 ```html
+<link rel="stylesheet" href="https://bbbonnibel.github.io/carrion-strap/release/v0/profile/main.css">
 <style>
-@import url("https://bbbonnibel.github.io/carrion-strap/release/v0/profile/main.css");
-
 h2 {
   font-size: 150%;
 }

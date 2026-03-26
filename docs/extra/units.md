@@ -8,8 +8,9 @@ The Units module offers a number of additonal classes for defining font sizes, m
 It's an extra module you need to import separately for your profile in your styles:
 
 ```html
+<link rel="stylesheet" href="https://bbbonnibel.github.io/carrion-strap/release/v0/profile/main.css">
 <style>
-@import url("https://bbbonnibel.github.io/carrion-strap/release/v0/units.css");
+<!-- your custom styles here -->
 </style>
 ```
 

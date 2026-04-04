@@ -136,6 +136,29 @@ Alternately, you can force either one into either position regardless of which o
 - `cs-first` (or `cs-left`) forces the picture or main element into the first/left position: `<div class="cs-picture cs-first">`
 - `cs-second` (or `cs-right`) forces the picture or main element into the second/right position: `<div class="cs-picture cs-second">`
 
+## Profile background
+
+You can host a profile background using `.cs-profile-background`:
+
+```html
+<div class="cs-profile-background">
+  <img src="/carrion-strap/assets/images/snake-mountain.png">
+</div>
+```
+
+This image will cover the entire background of your profile page, _behind_ your profile content.
+
+You can also use two images, one on the left and right:
+
+```html
+<div class="cs-profile-background">
+  <img class="cs-left" src="/carrion-strap/assets/images/he-man.png">
+  <img class="cs-right" src="/carrion-strap/assets/images/snake-mountain.png">
+</div>
+```
+
+You can also use `cs-full`. This is equivalent to the first example, but might help you crossfade a `cs-left` or `cs-right` image over just its left or right half.
+
 ## Image spoiler box
 
 To spoilerize images, wrap your images in an element with the `cs-image-spoiler-box` class.

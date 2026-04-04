@@ -10,9 +10,9 @@ Profile CSS might be updated from time to time. New features will get added, and
 To get started, import carrion-strap's current version at the top of your profile code:
 
 ```html
+<link rel="stylesheet" href="https://bbbonnibel.github.io/carrion-strap/release/v0/profile/main.css">
 <style>
-@import url("https://bbbonnibel.github.io/carrion-strap/release/v0/profile/main.css");
-/* your own CSS continues */
+/* your own CSS here */
 </style>
 ```
 

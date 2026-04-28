@@ -1,4 +1,27 @@
 // Settings that describe default behaviour of carrion, and not this library.
 :host {
   --carrion-image-corner-radius: 4px;
+
+  // Character colors
+  --carrion-name-red: #ff4444;
+  --carrion-name-orange: #ff8800;
+  --carrion-name-yellow: #ffcc00;
+  --carrion-name-green: #44ff44;
+  --carrion-name-blue: #4488ff;
+  --carrion-name-purple: #bd6eff;
+  --carrion-name-pink: #ff44aa;
+  --carrion-name-brown: #c48364;
+  --carrion-name-teal: #29daf9;
+  --carrion-name-white: #ffffff;
+  --carrion-name-black: #000000;
+  --carrion-name-gray: #858585;
+  --carrion-name-dull-red: #cc6161;
+  --carrion-name-dull-orange: #c27338;
+  --carrion-name-dull-yellow: #b3872d;
+  --carrion-name-dull-green: #608f3d;
+  --carrion-name-dull-blue: #6286c0;
+  --carrion-name-dull-purple: #9576ad;
+  --carrion-name-dull-pink: #bb689a;
+  --carrion-name-dull-brown: #967f6e;
+  --carrion-name-dull-teal: #589193;
 }

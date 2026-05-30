@@ -1,9 +1,9 @@
 ---
-title: "Profiles: Colors"
+title: "Profiles: Color"
 description: "carrion-strap is a CSS library for carrion.chat. come get some strap."
 ---
 
-carrion-strap provides some classes and variables to assist with using Carrion's standard color variables. These correspond to the colors used in character names, and the colors used in `{color:pink}` etc, which are currently the same set of colors.
+carrion-strap provides some classes and variables to assist with using carrion's standard colors. These correspond to the colors used in character names, and the colors used in `{color:pink}` etc, which are currently the same set of colors.
 
 - Use `cs-fg-pink` to set the text color to pink. (Or substitute for another color in the list.)
 - Use `cs-bg-pink` to set the _background_ color to pink.

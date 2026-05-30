@@ -59,6 +59,11 @@ module.exports = {
           icon: "pencil-line",
         },
         {
+          title: "Color",
+          path: "/profile/color",
+          icon: "palette",
+        },
+        {
           title: "Images",
           path: "/profile/image",
           icon: "image",

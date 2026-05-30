@@ -40,6 +40,8 @@ If carrion adds built-in support for additional webfonts, we'll add `cs-font-*` 
 
 You can color your text with Carrion's standard color variables. These correspond to the colors used in character names, and the colors used in `{color:pink}` etc, which are currently the same set of colors.
 
+Use the `cs-fg-red` class to set the text color to the standard red, or `cs-bg-red` to set the _background_ color to the standard red.
+
 These same colors are also provided as CSS variables for those interested in using them.
 
 | Foreground color | Background color | CSS variable

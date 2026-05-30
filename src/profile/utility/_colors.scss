@@ -1,0 +1,39 @@
+$colors: (
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "purple",
+  "pink",
+  "brown",
+  "teal",
+  "white",
+  "black",
+  "gray",
+  "dull-red",
+  "dull-orange",
+  "dull-yellow",
+  "dull-green",
+  "dull-blue",
+  "dull-purple",
+  "dull-pink",
+  "dull-brown",
+  "dull-teal"
+);
+
+:root {
+  @each $color in $colors {
+    --cs-color-#{$color}: var(--carrion-color-#{$color});
+  }
+}
+
+@each $color in $colors {
+  .cs-fg-#{$color} {
+    color: var(--carrion-color-#{$color});
+  }
+
+  .cs-bg-#{$color} {
+    background-color: var(--carrion-color-#{$color});
+  }
+}

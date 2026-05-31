@@ -294,7 +294,7 @@ A pagedoll is an image that hangs out in the corner of your profile—usually a 
 
 Pagedolls were introduced to carrion by [Kayla](https://carrion.chat/character/Kayla/), and are also available via [her snippet gallery](https://carrion.chat/character/The%20Gallery/).
 
-carrion-strap also offers an implementation of pagedolls to help keep things simple:
+carrion-strap also offers an implementation of pagedolls to provide a simple way to include one:
 
 ```html
 <details class="cs-pagedoll">

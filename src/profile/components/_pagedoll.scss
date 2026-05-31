@@ -1,0 +1,61 @@
+:root,
+:host {
+  --cs-pagedoll-offset-left: 20px;
+  --cs-pagedoll-offset-right: 20px;
+  --cs-pagedoll-offset-bottom: 20px;
+}
+
+.cs-pagedoll,
+.cs-page-doll {
+  position: fixed;
+  bottom: var(--cs-pagedoll-offset-bottom);
+  right: var(--cs-pagedoll-offset-right);
+  z-index: 1;
+
+  & img {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+
+  & /* details */ {
+    background: transparent;
+    max-width: min(400px, 33vw);
+    margin: unset;
+    padding: unset;
+    padding-bottom: 30px;
+  }
+
+  & summary {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+
+    cursor: pointer;
+    display: block;
+    font-weight: 500;
+    width: max-content;
+    padding: 0 20px;
+    user-select: none;
+
+    &,
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &.cs-left {
+    right: unset;
+    left: var(--cs-pagedoll-offset-left);
+
+    & summary {
+      right: unset;
+      left: 0;
+    }
+  }
+
+  &.cs-snug {
+    --cs-pagedoll-offset-left: 0;
+    --cs-pagedoll-offset-right: 0;
+  }
+}

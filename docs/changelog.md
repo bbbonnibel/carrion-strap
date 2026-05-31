@@ -12,6 +12,7 @@ carrion-strap is currently at version 0. This is an experimental version to figu
 - Added a [contact](https://bbbonnibel.github.io/carrion-strap/contact/) page.
 - Added [Color](https://bbbonnibel.github.io/carrion-strap/profile/color/) classes (`cs-fg-*`, `cs-bg-*`), and color variables.
 - Added [Beans](https://bbbonnibel.github.io/carrion-strap/profile/components/#beans)
+- Added [Pagedolls](https://bbbonnibel.github.io/carrion-strap/profile/components/#pagedolls)
 - The [Gallery](https://bbbonnibel.github.io/carrion-strap/profile/components/#gallery) component now has `cs-left` and `cs-right` classes to align your images.
 
 # 12 April 2026

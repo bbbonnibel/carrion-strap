@@ -334,6 +334,41 @@ This static is configured to teal and aqua:
 
 <div class="cs-static" style="--color-1: teal; --color-2: aqua; width: 150px; height: 50px;"></div>
 
+## Pagedolls
+
+A pagedoll is an image that hangs out in the corner of your profile—usually a large transparent character (a doll!).
+
+Pagedolls were introduced to carrion by [Kayla](https://carrion.chat/character/Kayla/), and are also available via [her snippet gallery](https://carrion.chat/character/The%20Gallery/).
+
+carrion-strap also offers an implementation of pagedolls to help keep things simple:
+
+```html
+<details class="cs-pagedoll">
+  <summary>toggle pagedoll</summary>
+  <img src="https://github.io/bbbonnibel/carrion-strap/assets/images/skeletor-pagedoll.png">
+</details>
+```
+
+<details>
+<summary>
+Toggle pagedoll example
+</summary>
+
+If you look in the lower right corner of your screen, there will now be an example pagedoll.
+
+<details class="cs-pagedoll">
+  <summary>toggle pagedoll</summary>
+  <img src="https://github.io/bbbonnibel/carrion-strap/assets/images/skeletor-pagedoll.png">
+</details>
+
+</details>
+
+### Configuring your pagedoll
+
+Pagedolls are by default attached to the bottom right. To attach your pagedoll to the bottom left, use `cs-pagedoll cs-left`.
+
+Pagedolls are also offset from the edge by a small amount. If you want it right up against the edge of the screen, use `cs-pagedoll cs-snug`. You might do this if your character is supposed to look like they're coming in from off-screen.
+
 ## Beans
 
 A Bean is carrion-strap's term for a small object that appears in one of the corners of your profile. These are often used for decorative icons, or for links to hub profiles.

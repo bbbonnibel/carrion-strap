@@ -116,3 +116,11 @@ img {
     margin-top: unset;
   }
 }
+
+summary {
+  cursor: pointer;
+}
+
+.cs-pagedoll summary {
+  font-weight: 500;
+}

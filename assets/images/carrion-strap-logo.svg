@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Icon" transform="matrix(1,0,0,1,0.0978526,5.25417)">
+        <g id="Strap" transform="matrix(0.961903,-0.27339,0.27339,0.961903,-11.2264,15.4721)">
+            <g transform="matrix(0.924108,0.209252,-0.220846,0.975309,17.431,-19.1596)">
+                <rect x="0.668" y="52.337" width="96.828" height="12.02"/>
+            </g>
+            <g transform="matrix(0.924108,-0.209252,-0.220846,-0.975309,17.431,115.194)">
+                <rect x="0.668" y="52.337" width="96.828" height="12.02"/>
+            </g>
+        </g>
+        <g transform="matrix(0.976972,-0.213367,0.213367,0.976972,-9.52206,11.748)">
+            <g id="Dong">
+                <path d="M58.431,55.092C52.421,59.265 42.571,58.598 41.235,52.254C39.9,45.91 43.072,44.407 36.728,39.9C30.384,35.392 20.868,23.873 20.367,19.866C19.866,15.86 18.364,9.516 21.536,7.846C24.708,6.177 33.89,13.189 37.73,17.696C41.569,22.204 45.242,33.389 49.583,34.891C53.923,36.394 61.018,38.026 62.27,43.573C63.439,48.748 64.441,50.918 58.431,55.092Z" style="fill:rgb(151,18,47);stroke:black;stroke-width:1px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

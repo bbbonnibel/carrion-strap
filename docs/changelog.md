@@ -8,6 +8,7 @@ carrion-strap is currently at version 0. This is an experimental version to figu
 # 31 May 2026
 
 - Added this changelog!
+- Added a logo, at long last.
 - Added a [contact](https://bbbonnibel.github.io/carrion-strap/contact/) page.
 - Added [Color](https://bbbonnibel.github.io/carrion-strap/profile/color/) classes: `cs-fg-*`, `cs-bg-*`, and color variables.
 - Added [Beans](https://bbbonnibel.github.io/carrion-strap/profile/components/#beans)

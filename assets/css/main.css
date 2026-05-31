@@ -1,3 +1,11 @@
+.sidebar-header {
+  height: unset;
+}
+
+.logo-link img {
+  max-height: unset;
+}
+
 .main-content > h2 {
   font-size: 36px;
   padding-bottom: 10px;

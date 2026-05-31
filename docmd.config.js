@@ -6,12 +6,12 @@ module.exports = {
 
   // --- Branding ---
   logo: {
-    light: "assets/images/docmd-logo-dark.png",
-    dark: "assets/images/docmd-logo-light.png",
-    alt: "Logo",
+    light: "assets/images/carrion-strap-text-logo-black.svg",
+    dark: "assets/images/carrion-strap-text-logo-white.svg",
+    alt: "carrion-strap",
     href: "./",
   },
-  favicon: "assets/favicon.ico",
+  favicon: "assets/images/favicon-64.png",
 
   // --- Source & Output ---
   srcDir: "docs",

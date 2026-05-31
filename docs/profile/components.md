@@ -288,52 +288,6 @@ Here's the stars and triangles pointed up, right, down, and left:
 
 :::
 
-
-
-## Censor
-
-The censor component just censors text, like this: <span class="cs-censor">tada!</span>
-
-```html
-<span class="cs-censor">tada!</span>
-```
-
-## Static
-
-This applies a background to an element that resembles static.
-
-<div class="cs-static" style="width: 150px; height: 50px;"></div>
-
-```html
-<div class="cs-static" style="width: 150px; height: 50px;"></div>
-```
-
-That's it! That's the component.
-
-:::callout tip How's this work?
-`cs-static` applies a repeating background of black-and-white dots that's so tiny it can't be rendered accurately, and then it moves that background. What you're seeing is rounding errors in rendering.
-:::
-
-### Static censor
-
-You can combine this with the [Censor](#censor) component to create a static censor: <span class="cs-censor cs-static">tada!</span>
-
-```html
-<span class="cs-censor cs-static">tada!</span>
-```
-
-### Configuring static
-
-You can change the colors of the static by providing `--color-1` and/or `--color-2`. These default to <span class="swatch" style="color: #999"></span> `#999` and <span class="swatch" style="color: #333"></span> `#333`, but can be set to anything at all.
-
-This static is configured to teal and aqua:
-
-```html
-<div class="cs-static" style="--color-1: teal; --color-2: aqua; width: 150px; height: 50px;"></div>
-```
-
-<div class="cs-static" style="--color-1: teal; --color-2: aqua; width: 150px; height: 50px;"></div>
-
 ## Pagedolls
 
 A pagedoll is an image that hangs out in the corner of your profile—usually a large transparent character (a doll!).
@@ -406,3 +360,47 @@ For example:
   --cs-bean-offset-side: 40px;
 }
 ```
+
+## Censor
+
+The censor component just censors text, like this: <span class="cs-censor">tada!</span>
+
+```html
+<span class="cs-censor">tada!</span>
+```
+
+## Static
+
+This applies a background to an element that resembles static.
+
+<div class="cs-static" style="width: 150px; height: 50px;"></div>
+
+```html
+<div class="cs-static" style="width: 150px; height: 50px;"></div>
+```
+
+That's it! That's the component.
+
+:::callout tip How's this work?
+`cs-static` applies a repeating background of black-and-white dots that's so tiny it can't be rendered accurately, and then it moves that background. What you're seeing is rounding errors in rendering.
+:::
+
+### Static censor
+
+You can combine this with the [Censor](#censor) component to create a static censor: <span class="cs-censor cs-static">tada!</span>
+
+```html
+<span class="cs-censor cs-static">tada!</span>
+```
+
+### Configuring static
+
+You can change the colors of the static by providing `--color-1` and/or `--color-2`. These default to <span class="swatch" style="color: #999"></span> `#999` and <span class="swatch" style="color: #333"></span> `#333`, but can be set to anything at all.
+
+This static is configured to teal and aqua:
+
+```html
+<div class="cs-static" style="--color-1: teal; --color-2: aqua; width: 150px; height: 50px;"></div>
+```
+
+<div class="cs-static" style="--color-1: teal; --color-2: aqua; width: 150px; height: 50px;"></div>

@@ -15,11 +15,13 @@ carrion-strap provides a range of light-weight **utility classes** to handle eve
 
 It also provides larger-scale **components** to provide features like a gallery with minimal work.
 
+<!--
 ## [For chat](./chat)
 
 carrion-strap provides **chat themeing** that will simplify configuring colors and text for chat. You just say what you want things to look like, and carrion-strap will handle styling the individual elements so that you, personally, don't have to know where everything goes (or even care if the layout changes a bit).
 
 [carrion.chat]: https://carrion.chat/
+-->
 
 ## Update plans
 

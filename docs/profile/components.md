@@ -31,7 +31,7 @@ You can use `cs-gallery` to create a gallery of tiled images.
 </div>
 ```
 
-### Configuration
+### Configuring your gallery
 
 By default, gallery images are centered. You can add the `cs-left` or `cs-right` classes to center them left or right.
 
@@ -322,7 +322,7 @@ You can combine this with the [Censor](#censor) component to create a static cen
 <span class="cs-censor cs-static">tada!</span>
 ```
 
-### Configuration
+### Configuring static
 
 You can change the colors of the static by providing `--color-1` and/or `--color-2`. These default to <span class="swatch" style="color: #999"></span> `#999` and <span class="swatch" style="color: #333"></span> `#333`, but can be set to anything at all.
 
@@ -351,7 +351,7 @@ Basically, stick one of these classes on a thing, and that thing will be telepor
 
 By default, beans are positioned 20px away from the edge, or 75px away from the top (to make room for the header).
 
-### Configuration
+### Configuring your beans
 
 You can override the standard distances yourself on your beans by overriding their `top`/`right`/`bottom`/`left` values.
 

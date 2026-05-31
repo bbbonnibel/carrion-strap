@@ -335,3 +335,41 @@ This static is configured to teal and aqua:
 ```
 
 <div class="cs-static" style="--color-1: teal; --color-2: aqua; width: 150px; height: 50px;"></div>
+
+## Beans
+
+A Bean is carrion-strap's term for a small object that appears in one of the corners of your profile. These are often used for decorative icons, or for links to hub profiles.
+
+You can quickly position a Bean of your own by using one of the following classes:
+
+- `cs-bean-top-left`
+- `cs-bean-top-right`
+- `cs-bean-bottom-left`
+- `cs-bean-bottom-right`
+
+(Flipping the directions is fine too, e.g. `cs-bean-left-top`.)
+
+Basically, stick one of these classes on a thing, and that thing will be teleported into that corner of the screen.
+
+By default, beans are positioned 20px away from the edge, or 75px away from the top (to make room for the header).
+
+### Advanced configuration
+
+You can override the standard distances yourself on your beans by overriding their `top`/`right`/`bottom`/`left` values.
+
+Alternately, if you're using beans in multiple corners of your profile, you can configure them all at once by overriding one of the following values:
+
+- `--cs-bean-offset-side`: Distance from the side (default `20px`)
+- `--cs-bean-offset-top`: Distance from the side (default `75px`)
+- `--cs-bean-offset-left`: Distance from the left (by default set to `--cs-bean-offset-side`)
+- `--cs-bean-offset-right`: Distance from the right (by default set to `--cs-bean-offset-side`)
+- `--cs-bean-offset-bottom`: Distance from the bottom (default `20px`)
+
+For example:
+
+```css
+:root {
+  /* All beans appear 40px from the left/right edges. */
+  --cs-bean-offset-side: 40px;
+}
+```

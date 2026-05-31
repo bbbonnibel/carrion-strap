@@ -1,0 +1,35 @@
+:root {
+  --cs-bean-offset-side: 20px;
+  --cs-bean-offset-top: 75px;
+  --cs-bean-offset-left: var(--cs-bean-offset-side);
+  --cs-bean-offset-right: var(--cs-bean-offset-side);
+  --cs-bean-offset-bottom: 20px;
+}
+
+.cs-bean-top-right,
+.cs-bean-right-top {
+  position: fixed;
+  top: var(--cs-bean-offset-top);
+  right: var(--cs-bean-offset-right);
+}
+
+.cs-bean-top-left,
+.cs-bean-left-top {
+  position: fixed;
+  top: var(--cs-bean-offset-top);
+  left: var(--cs-bean-offset-left);
+}
+
+.cs-bean-bottom-right,
+.cs-bean-right-bottom {
+  position: fixed;
+  bottom: var(--cs-bean-offset-bottom);
+  right: var(--cs-bean-offset-right);
+}
+
+.cs-bean-bottom-left,
+.cs-bean-left-bottom {
+  position: fixed;
+  bottom: var(--cs-bean-offset-bottom);
+  left: var(--cs-bean-offset-left);
+}

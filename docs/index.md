@@ -33,4 +33,6 @@ Coming soon:
 - Anything listed in [our issue tracker](https://github.com/bbbonnibel/carrion-strap/issues).
 - Version 1, which will also move to `carrion-strap.github.io`.
 
+
+[carrion.chat]: https://carrion.chat
 [bonnibel]: https://carrion.chat/character/Bonnibel

@@ -92,10 +92,20 @@ module.exports = {
         },
       ],
     },
+    // {
+    //   title: "Chat",
+    //   icon: "message-circle-heart",
+    //   path: "/chat",
+    // },
     {
-      title: "Chat",
-      icon: "message-circle-heart",
-      path: "/chat",
+      title: "Changelog",
+      icon: "logs",
+      path: "/changelog",
+    },
+    {
+      title: "Contact us",
+      icon: "mail",
+      path: "/contact",
     },
     {
       title: "GitHub",

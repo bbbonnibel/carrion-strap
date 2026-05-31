@@ -5,7 +5,7 @@ description: "carrion-strap is a CSS library for carrion.chat. come get some str
 
 **carrion-strap is a CSS library built for [carrion.chat]. come get some strap.**
 
-carrion-strap is there to make writing profiles and chat more straightforward. It's a collection of styles that will work on all up-to-date browsers. It's not opinionated about what your page should look like; it just wants to help you get it made. This library is free; you can just use it.
+carrion-strap is there to make styling for carrion more straightforward. It's a collection of styles that will work on all up-to-date browsers. It's not opinionated about what your page should look like; it just wants to help you get it made. This library is free; you can just use it.
 
 This library released in January 2026 and is a work in progress. It's currently in version 0, and is experimental to figure out what it can/should do. It's made by [Bonnibel]. You can [contact us](https://bbbonnibel.github.io/carrion-strap/contact/) with questions or comments about it!
 

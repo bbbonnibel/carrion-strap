@@ -22,7 +22,8 @@ $colors: (
   "dull-teal"
 );
 
-:root {
+:root,
+:host {
   @each $color in $colors {
     --cs-color-#{$color}: var(--carrion-color-#{$color});
   }

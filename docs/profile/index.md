@@ -25,7 +25,7 @@ This sample uses the [profile side-by-side component](/carrion-strap/profile/com
 
 <div class="cs-profile">
   <div class="cs-picture">
-    <img src="https://github.io/bbbonnibel/carrion-strap/assets/images/evil-lyn.png">
+    <img src="https://bbbonnibel.github.io/carrion-strap/assets/images/evil-lyn.png">
   </div>
 
   <div class="cs-main">
@@ -51,7 +51,7 @@ h2 {
 
 <div class="cs-profile">
   <div class="cs-picture">
-    <img src="https://github.io/bbbonnibel/carrion-strap/assets/images/evil-lyn.png">
+    <img src="https://bbbonnibel.github.io/carrion-strap/assets/images/evil-lyn.png">
   </div>
 
   <div class="cs-main">

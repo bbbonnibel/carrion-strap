@@ -345,7 +345,7 @@ carrion-strap also offers an implementation of pagedolls to help keep things sim
 ```html
 <details class="cs-pagedoll">
   <summary>toggle pagedoll</summary>
-  <img src="https://github.io/bbbonnibel/carrion-strap/assets/images/skeletor-pagedoll.png">
+  <img src="https://bbbonnibel.github.io/carrion-strap/assets/images/skeletor-pagedoll.png">
 </details>
 ```
 
@@ -358,7 +358,7 @@ If you look in the lower right corner of your screen, there will now be an examp
 
 <details class="cs-pagedoll">
   <summary>toggle pagedoll</summary>
-  <img src="https://github.io/bbbonnibel/carrion-strap/assets/images/skeletor-pagedoll.png">
+  <img src="https://bbbonnibel.github.io/carrion-strap/assets/images/skeletor-pagedoll.png">
 </details>
 
 </details>

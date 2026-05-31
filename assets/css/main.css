@@ -1,3 +1,21 @@
+body {
+  display: flex;
+  flex-flow: row nowrap;
+  --sidebar-width: 260px;
+
+  & > .sidebar {
+    position: sticky;
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+  }
+
+  & > .main-content-wrapper {
+    margin-left: 0;
+    width: 1200px; /* carrion max profile width */
+    max-width: calc(100vw - var(--sidebar-width));
+  }
+}
+
 .sidebar-header {
   height: unset;
 }

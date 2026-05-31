@@ -27,9 +27,8 @@ carrion-strap provides **chat themeing** that will simplify configuring colors a
 
 carrion-strap is currently in beta (v0). When we make updates, the CSS files that currently exist will be updated in-place, so you will just get updates and access to new stuff automatically.
 
-When carrion-strap updates to v1, all v0 code will remain working exactly where it is — it just won't get updated anymore.
+Coming soon:
 
-The following is planned already for v1:
-
-- `v0/profile/main.css` → `v1/profile.css`
-- Move to `carrion-strap.github.io`
+- Chat themes.
+- Anything listed in [our issue tracker](https://github.com/bbbonnibel/carrion-strap/issues).
+- Version 1, which will also move to `carrion-strap.github.io`.

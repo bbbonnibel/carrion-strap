@@ -12,12 +12,6 @@
   justify-content: center;
   gap: var(--inner-space);
   padding: var(--outer-space);
-  max-width: min(
-    calc(
-      (var(--thumb-size) + var(--space)) * var(--columns) + var(--outer-space)
-    ),
-    100%
-  );
 
   > a {
     display: flex;
@@ -33,8 +27,12 @@
     object-fit: cover;
     margin: 0;
   }
-}
 
-.cs-gallery-columns-4 {
-  --columns: 4;
+  &.cs-left {
+    justify-content: flex-start;
+  }
+
+  &.cs-right {
+    justify-content: flex-end;
+  }
 }

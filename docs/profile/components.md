@@ -5,10 +5,10 @@ description: "carrion-strap is a CSS library for carrion.chat. come get some str
 
 ## Gallery
 
-You can use `cs-gallery` to create a gallery. This will default to three columns. When the window gets too narrow, it will drop down to two columns automatically.
+You can use `cs-gallery` to create a gallery of tiled images.
 
 ::: callout info Example
-<div class="cs-gallery cs-block-align-center">
+<div class="cs-gallery">
   <a href="/carrion-strap/assets/images/cuddles.png"><img src="/carrion-strap/assets/images/cuddles.png"></a>
   <a href="/carrion-strap/assets/images/evil-lyn.png"><img src="/carrion-strap/assets/images/evil-lyn.png"></a>
   <a href="/carrion-strap/assets/images/skeletor.png"><img src="/carrion-strap/assets/images/skeletor.png"></a>
@@ -21,7 +21,7 @@ You can use `cs-gallery` to create a gallery. This will default to three columns
 <!-- -->
 
 ```html
-<div class="cs-gallery cs-block-align-center">
+<div class="cs-gallery">
   <a href="/carrion-strap/assets/images/cuddles.png"><img src="/carrion-strap/assets/images/cuddles.png"></a>
   <a href="/carrion-strap/assets/images/evil-lyn.png"><img src="/carrion-strap/assets/images/evil-lyn.png"></a>
   <a href="/carrion-strap/assets/images/skeletor.png"><img src="/carrion-strap/assets/images/skeletor.png"></a>
@@ -30,6 +30,10 @@ You can use `cs-gallery` to create a gallery. This will default to three columns
   <a href="/carrion-strap/assets/images/she-ra.png"><img src="/carrion-strap/assets/images/she-ra.png"></a>
 </div>
 ```
+
+### Configuration
+
+By default, gallery images are centered. You can add the `cs-left` or `cs-right` classes to center them left or right.
 
 ### Styling your images
 
@@ -80,12 +84,6 @@ The “op” stands for “object position”. It's a technical CSS thing! Don't
 
 For more information on the `cs-op` classes used here, see [*Advanced Utilities: Object Position*](../advanced#object-position)
 :::
-
-### Configuring your gallery
-
-Use `cs-gallery cs-gallery-columns-4` to default to four columns wide instead of three.
-
-By default, the gallery snippet above is center-aligned with the `cs-block-align-center` class. You can remove that alignment, or specifically set it to left/right with `cs-block-align-left` or `cs-block-align-right`, which will push the gallery to the left or right edge. (See: [*Advanced Utilities: Blocks*](../advanced#blocks))
 
 ## Profile side-by-side structure
 
@@ -353,7 +351,7 @@ Basically, stick one of these classes on a thing, and that thing will be telepor
 
 By default, beans are positioned 20px away from the edge, or 75px away from the top (to make room for the header).
 
-### Advanced configuration
+### Configuration
 
 You can override the standard distances yourself on your beans by overriding their `top`/`right`/`bottom`/`left` values.
 

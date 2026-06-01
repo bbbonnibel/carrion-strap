@@ -248,41 +248,41 @@ Shape size is equal to the current font size (or `1em`) and the current font col
 | <span class="cs-shape-star"></span> Star | `cs-shape-star` |
 | <span class="cs-shape-triangle"></span> Triangle (Equilateral) | `cs-shape-triangle` |
 
-These shapes all point “up” by default. You can also reorient them by combining any of them with `point-right`, `point-down`, or `point-left`.
+These shapes all point *up* by default. You can also reorient them by combining any of them with `cs-point-right`, `cs-point-down`, or `cs-point-left`.
 
 ::: callout info Example
 
 Here's the stars and triangles pointed up, right, down, and left:
 
 <div class="cs-flex" style="gap: 10px; margin: 10px;">
-  <span class="cs-shape-triangle point-up"></span>
-  <span class="cs-shape-triangle point-right"></span>
-  <span class="cs-shape-triangle point-down"></span>
-  <span class="cs-shape-triangle point-left"></span>
+  <span class="cs-shape-triangle cs-point-up"></span>
+  <span class="cs-shape-triangle cs-point-right"></span>
+  <span class="cs-shape-triangle cs-point-down"></span>
+  <span class="cs-shape-triangle cs-point-left"></span>
 </div>
 
 <div class="cs-flex" style="gap: 10px; margin: 10px;">
-  <span class="cs-shape-star point-up"></span>
-  <span class="cs-shape-star point-right"></span>
-  <span class="cs-shape-star point-down"></span>
-  <span class="cs-shape-star point-left"></span>
+  <span class="cs-shape-star cs-point-up"></span>
+  <span class="cs-shape-star cs-point-right"></span>
+  <span class="cs-shape-star cs-point-down"></span>
+  <span class="cs-shape-star cs-point-left"></span>
 </div>
 
 ```html
 <!-- triangles -->
 <div class="cs-flex" style="gap: 10px; margin: 10px;">
-  <span class="cs-shape-triangle point-up"></span>
-  <span class="cs-shape-triangle point-right"></span>
-  <span class="cs-shape-triangle point-down"></span>
-  <span class="cs-shape-triangle point-left"></span>
+  <span class="cs-shape-triangle cs-point-up"></span>
+  <span class="cs-shape-triangle cs-point-right"></span>
+  <span class="cs-shape-triangle cs-point-down"></span>
+  <span class="cs-shape-triangle cs-point-left"></span>
 </div>
 
 <!-- stars -->
 <div class="cs-flex" style="gap: 10px; margin: 10px;">
-  <span class="cs-shape-star point-up"></span>
-  <span class="cs-shape-star point-right"></span>
-  <span class="cs-shape-star point-down"></span>
-  <span class="cs-shape-star point-left"></span>
+  <span class="cs-shape-star cs-point-up"></span>
+  <span class="cs-shape-star cs-point-right"></span>
+  <span class="cs-shape-star cs-point-down"></span>
+  <span class="cs-shape-star cs-point-left"></span>
 </div>
 ```
 

@@ -25,9 +25,36 @@ You can align a block left, center, or right, using `cs-block-align-left`, `cs-b
 
 ## Details-related classes
 
-This relates to the `:::` syntax that creates an accordion.
+This relates to the `:::` or `<details>` syntax that creates an accordion.
 
-### Show or hide an element if a details element is open
+### Show or hide an element inside the summary
+
+You may wish to show/hide content inside the summary element itself, depending on whether the details element is open or closed.
+
+- `cs-when-open` is only visible when the details element it's inside is open.
+- `cs-when-closed` is only visible when the details element it's inside is closed.
+
+Obviously the _content_ of the details element is fully controlled already, so this is only useful inside the summary.
+
+Reasons I'd expect for you using this is:
+
+- To display a totally different element for the summary depending on whether it's open or closed.
+- To display entirely different icons.
+- To help you style [tabs](./components#tabs).
+
+:::callout info Example
+
+<details>
+<summary>
+  Open me! <span class="cs-when-open">(open)</span> <span class="cs-when-closed">(closed)</span>
+</summary>
+Content
+</details>
+
+:::
+
+
+### Show or hide something after a details element
 
 Place a details element on your profile, then apply one of these classes to an element immediately after it:
 
@@ -38,7 +65,7 @@ These must follow **immediately** after a details element. You can chain these t
 
 :::callout info Example
 
-This following snippet on carrion:
+This following snippet on carrion ...
 
 ```html
 ::: Try me!
@@ -53,7 +80,7 @@ Look below!
 </div>
 ```
 
-Produces this effect:
+... Produces this effect:
 
 <details style="margin-bottom: 10px"><summary style="cursor: pointer;">Try me!</summary>
 Look below!

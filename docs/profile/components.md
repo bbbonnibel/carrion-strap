@@ -210,7 +210,7 @@ Here's how you do tabs:
 - For `cs-content-a` to be visible, `cs-tab-a` must be *open*
 - You can assign a default tab by simply putting the `open` attribute on that tab.
 - It is possible for *no* tab to be open. (That's not something we can control.) In that case, the content of, `cs-content-no-tab` will be shown.
-- The order of your `cs-content-*` elements does not have to correspond to the tabs.
+- Your `cs-content-*` can appear in any order, and can go *anywhere* inside the `cs-tabs` container, even before the tabs themselves.
 
 **Tab groups:** All the tabs in a group should share a `name` attribute. In the above code, they all have `name="tabs"`. If you have a different box of `cs-tabs` elsewhere on your profile, you should set them to a different name, e.g. `name="tabs-2"`. Within a specific tab group, only one tab can be active at a time.
 
@@ -220,10 +220,13 @@ Here's how you do tabs:
 
 Since carrion-strap's philosophy is to do minimal styling, your tabs will not _look_ like tabs. You'll have to theme them yourself.
 
-carrion-strap offers the following basics:
+carrion-strap offers only the following basics:
 
 - `cs-tabs-no-marker` which removes the default marker on the `summary` component.
 - `cs-tabs-bold-open-tab` which bolds the open tab.
+- `cs-tab-row`, which can put your tabs in a (wrapping) flex row.
+
+You may also wish to use `cs-when-open` and `cs-when-closed` to show/hide specific elements inside your `<summary>` component. See [Advanced utilities#Details-related classes](./advanced.md#details-related-classes).
 
 Our recommendation is to follow styling like this:
 

@@ -157,6 +157,90 @@ You can also use two images, one on the left and right:
 
 You can also use `cs-full`. This is equivalent to the first example, but might help you crossfade a `cs-left` or `cs-right` image over just its left or right half.
 
+## Tabs
+
+Tabs are a structure that let you have multiple styled tabs (over here), which control the visibility of other, later content on the page.
+
+Because of limitations, tabs need to use a `<details><summary>` structure where you _only_ put text in the summary.
+
+Here's how you do tabs:
+
+```html
+<div class="cs-tabs / cs-tabs-no-marker cs-tabs-bold-open-tab">
+                    <!-- 👆 totally optional minimal styling classes -->
+  <div class="cs-tab-row"> <!-- 👈 optional, puts these tabs in a row -->
+    <details class="cs-tab cs-tab-a" name="tabs" open><summary>Tab A</summary></details>
+    <details class="cs-tab cs-tab-b" name="tabs"><summary>Tab B</summary></details>
+    <details class="cs-tab cs-tab-c" name="tabs"><summary>Tab C</summary></details>
+  </div>
+
+  <div class="cs-content-a">Content A</div>
+  <div class="cs-content-b">Content B</div>
+  <div class="cs-content-c">Content C</div>
+  <div class="cs-content-no-tab">
+    <!-- The cs-content-no-tab class is active if `cs-tab` is open. -->
+    No tab is open.
+  </div>
+</div>
+```
+
+::: callout info In practice
+
+<div class="cs-tabs / cs-tabs-no-marker cs-tabs-bold-open-tab / cs-tabs-example">
+  <div class="cs-tab-row">
+    <details class="cs-tab cs-tab-a" name="tabs" open><summary>Tab A</summary></details>
+    <details class="cs-tab cs-tab-b" name="tabs"><summary>Tab B</summary></details>
+    <details class="cs-tab cs-tab-c" name="tabs"><summary>Tab C</summary></details>
+  </div>
+
+  <div class="cs-content-a">Content A</div>
+  <div class="cs-content-b">Content B</div>
+  <div class="cs-content-c">Content C</div>
+  <div class="cs-content-no-tab">
+    <!-- The cs-content-no-tab class is active if `cs-tab` is open. -->
+    No tab is open.
+  </div>
+</div>
+
+:::
+
+- Your tabs need to be surrounded in a `cs-tabs` container.
+- The tab, `cs-tab-a`, and its corresponding content, `cs-content-a`, need to go in the same `cs-tabs` container.
+- You have up to 36 tabs you can use: `cs-tab-a` thru `cs-tab-z`, and `cs-tab-0` thru `cs-tab-9`.
+- For `cs-content-a` to be visible, `cs-tab-a` must be *open*
+- You can assign a default tab by simply putting the `open` attribute on that tab.
+- It is possible for *no* tab to be open. (That's not something we can control.) In that case, the content of, `cs-content-no-tab` will be shown.
+- The order of your `cs-content-*` elements does not have to correspond to the tabs.
+
+**Tab groups:** All the tabs in a group should share a `name` attribute. In the above code, they all have `name="tabs"`. If you have a different box of `cs-tabs` elsewhere on your profile, you should set them to a different name, e.g. `name="tabs-2"`. Within a specific tab group, only one tab can be active at a time.
+
+**Multiple tabs:** If you want to be able to have multiple tabs open, leave the `name` attribute off entirely. That attribute forces only one element with that name to be open.
+
+### Styling your tabs
+
+Since carrion-strap's philosophy is to do minimal styling, your tabs will not _look_ like tabs. You'll have to theme them yourself.
+
+carrion-strap offers the following basics:
+
+- `cs-tabs-no-marker` which removes the default marker on the `summary` component.
+- `cs-tabs-bold-open-tab` which bolds the open tab.
+
+Our recommendation is to follow styling like this:
+
+```css
+.cs-tab summary {
+  /* Styles for all your tabs */
+}
+
+.cs-tab:open summary {
+  /* Styles for only your open tabs */
+}
+
+.cs-tab:not(:open) summary {
+  /* Styles for only your closed tabs */
+}
+```
+
 ## Image spoiler box
 
 To spoilerize images, wrap your images in an element with the `cs-image-spoiler-box` class.

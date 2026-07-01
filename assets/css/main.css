@@ -36,6 +36,12 @@
   }
 }
 
+.main-content {
+  & h3 {
+    font-size: 30px;
+  }
+}
+
 img {
   margin: unset;
 }
@@ -125,4 +131,14 @@ summary {
 
 .cs-pagedoll summary {
   font-weight: 500;
+}
+
+.cs-tabs-example {
+  outline: 1px dotted white;
+  border-radius: 4px;
+  padding: 20px;
+
+  & .cs-tab:open summary {
+    font-weight: bold;
+  }
 }

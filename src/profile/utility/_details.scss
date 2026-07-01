@@ -1,3 +1,15 @@
+// when-open/when-closed
+
+details:open .cs-when-closed {
+  display: none;
+}
+
+details:not(:open) .cs-when-open {
+  display: none;
+}
+
+// After-open/closed stuff
+
 details:open + .cs-if-closed-above {
   display: none;
 }

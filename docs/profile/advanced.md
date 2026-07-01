@@ -34,14 +34,6 @@ You may wish to show/hide content inside the summary element itself, depending o
 - `cs-when-open` is only visible when the details element it's inside is open.
 - `cs-when-closed` is only visible when the details element it's inside is closed.
 
-Obviously the _content_ of the details element is fully controlled already, so this is only useful inside the summary.
-
-Reasons I'd expect for you using this is:
-
-- To display a totally different element for the summary depending on whether it's open or closed.
-- To display entirely different icons.
-- To help you style [tabs](../components#tabs).
-
 :::callout info Example
 
 <details>
@@ -52,6 +44,14 @@ Content
 </details>
 
 :::
+
+Obviously the _content_ of the details element is fully controlled already, so this is only useful inside the summary.
+
+Reasons I'd expect for you using this is:
+
+- To display a totally different element for the summary depending on whether it's open or closed.
+- To display entirely different icons.
+- To help you style [tabs](../components#tabs).
 
 
 ### Show or hide something after a details element

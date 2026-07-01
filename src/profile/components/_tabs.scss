@@ -4,7 +4,7 @@
   }
 }
 
-.cs-tab-row {
+.cs-tabs .cs-tab-row {
   display: flex;
   flex-flow: row wrap;
   gap: 20px;
@@ -22,10 +22,10 @@ $suffixes:
   }
 }
 
-.cs-tabs-no-marker summary::marker {
+.cs-tabs.cs-tabs-no-marker summary::marker {
   content: none;
 }
 
-.cs-tabs-bold-open-tab .cs-tab:open summary {
+.cs-tabs.cs-tabs-bold-open-tab .cs-tab:open summary {
   font-weight: bold;
 }

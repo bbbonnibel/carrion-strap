@@ -204,17 +204,34 @@ Here's how you do tabs:
 
 :::
 
-- Your tabs need to be surrounded in a `cs-tabs` container.
-- The tab, `cs-tab-a`, and its corresponding content, `cs-content-a`, need to go in the same `cs-tabs` container.
-- You have up to 36 tabs you can use: `cs-tab-a` thru `cs-tab-z`, and `cs-tab-0` thru `cs-tab-9`.
-- For `cs-content-a` to be visible, `cs-tab-a` must be *open*
+The key parts to this feature are:
+
+- `cs-tabs`: A container wrapping the tabs and corresponding content. This is **required** for all the tab behaviour to work.
+- A series of components with classes `cs-tab cs-tab-a`, `-b`, `-c`, etc.
+- A series of corresponding components with classes `cs-content-a`, `-b`, `-c`, etc.
+- Optionally, a `cs-content-no-tab` component which is visible only when no tab is open.
+
+Everything else is optional. Tabs and their content elements can go in any order, anywhere inside the `cs-tabs` element. You can even put the content before the tabs if you want.
+
+The above example uses `cs-tab-row`, an optional class which puts the tabs in a row.
+
+Here's the actual rules:
+
+- Your tabs and content need to be inside a `cs-tabs` container.
+- There are up to 36 tabs you can use: `cs-tab-a` thru `cs-tab-z`, and `cs-tab-0` thru `cs-tab-9`.
+- If `cs-tab-a` is open, `cs-content-a` will be visible. Otherwise, `cs-content-a` is hidden.
 - You can assign a default tab by simply putting the `open` attribute on that tab.
-- It is possible for *no* tab to be open. (That's not something we can control.) In that case, the content of, `cs-content-no-tab` will be shown.
-- Your `cs-content-*` can appear in any order, and can go *anywhere* inside the `cs-tabs` container, even before the tabs themselves.
+- All your tabs should share a `name` in common, e.g. `name="tabs"`. This can be whatever you want (e.g. `name="traits"` as long as it's the same for each tab.)
 
-**Tab groups:** All the tabs in a group should share a `name` attribute. In the above code, they all have `name="tabs"`. If you have a different box of `cs-tabs` elsewhere on your profile, you should set them to a different name, e.g. `name="tabs-2"`. Within a specific tab group, only one tab can be active at a time.
+### Multiple tab groups
 
-**Multiple tabs:** If you want to be able to have multiple tabs open, leave the `name` attribute off entirely. That attribute forces only one element with that name to be open.
+You can have multiple `cs-tabs` elements in different places on the page, and you can re-use the same `cs-tab-a` etc tabs in different groups—you don't need to use different ones.
+
+All the tabs in a group should share a `name` attribute unique to that group. In the above code, all the tabs share `name="tabs"`. If you create a second group, you might give all the tabs in _that_ group `name="tabs2`" or similar.
+
+### Multiple simultaneous tabs
+
+If you want to be able to have multiple tabs open simultaneously, leave the `name` attribute off entirely. That attribute forces only one element with that name to be open.
 
 ### Styling your tabs
 

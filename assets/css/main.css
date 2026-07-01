@@ -18,6 +18,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .sidebar-header {
   height: unset;
 }
@@ -52,10 +56,19 @@ img {
   height: 0.9em;
   outline: 1px solid white;
   color: 1px solid black;
-  border-radius: 2px;
+  border-radius: 4px;
   background: currentColor;
   margin-left: 2px;
   transform: translateY(2px);
+
+  &.border-swatch {
+    border-width: 2px;
+    border-style: solid;
+    outline: 0;
+    background: color-mix(currentColor, transparent 75%);
+    box-sizing: content-box;
+    box-sizing: border-box;
+  }
 }
 
 .example-image {

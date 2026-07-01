@@ -37,4 +37,8 @@ $colors: (
   .cs-bg-#{$color} {
     background-color: var(--carrion-color-#{$color});
   }
+
+  .cs-border-#{$color} {
+    border-color: var(--carrion-color-#{$color});
+  }
 }

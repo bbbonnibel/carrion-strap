@@ -159,9 +159,9 @@ You can also use `cs-full`. This is equivalent to the first example, but might h
 
 ## Tabs
 
-Tabs are a structure that let you have multiple styled tabs (over here), which control the visibility of other, later content on the page.
+Tabs are a structure that let you have multiple tabs that control visibility of other content. If the tab is open, you can see the content.
 
-Because of limitations, tabs need to use a `<details><summary>` structure where you _only_ put text in the summary.
+Because of limitations, tabs need to use a `<details><summary>` structure. You'll be using the `<summary>` part only, and ignoring the rest of the details component.
 
 Here's how you do tabs:
 

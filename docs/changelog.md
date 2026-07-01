@@ -5,6 +5,11 @@ description: "carrion-strap is a CSS library for carrion.chat. come get some str
 
 carrion-strap is currently at version 0. This is an experimental version to figure out what carrion-strap can/should do, and how it should do it.
 
+# 1 July 2026
+
+- Added [Tabs](https://bbbonnibel.github.io/carrion-strap/profile/components/#tabs)
+- Added `cs-when-open` and `cs-when-closed` to [Advanced utilities](https://bbbonnibel.github.io/carrion-strap/profile/advanced/#details-related-classes)
+
 # 31 May 2026
 
 - Added this changelog!

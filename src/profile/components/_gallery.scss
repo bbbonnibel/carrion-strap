@@ -1,7 +1,6 @@
 .cs-gallery {
   --thumb-size: 200px;
   --space: 20px;
-  --columns: 3;
   --thumb-aspect-ratio: 1/1;
   --inner-space: var(--space);
   --outer-space: var(--space);
@@ -12,6 +11,8 @@
   justify-content: center;
   gap: var(--inner-space);
   padding: var(--outer-space);
+  object-fit: cover;
+  object-position: center;
 
   > a {
     display: flex;
@@ -24,8 +25,13 @@
     width: var(--thumb-size);
     aspect-ratio: var(--thumb-aspect-ratio);
     border-radius: var(--image-radius);
-    object-fit: cover;
     margin: 0;
+  }
+
+  > a,
+  img {
+    object-fit: inherit;
+    object-position: inherit;
   }
 
   &.cs-left {
@@ -34,5 +40,14 @@
 
   &.cs-right {
     justify-content: flex-end;
+  }
+}
+
+.cs-bubble-gallery {
+  --thumb-size: 100px;
+
+  a,
+  img {
+    border-radius: 50%;
   }
 }

@@ -206,7 +206,7 @@ Here's how you do tabs:
 
 The key parts to this feature are:
 
-- `cs-tabs`: A container wrapping the tabs and corresponding content. This is **required** for all the tab behaviour to work.
+- A `cs-tabs` container wrapping the tabs and corresponding content. This is **required** for all the tab behaviour to work.
 - A series of components with classes `cs-tab cs-tab-a`, `-b`, `-c`, etc.
 - A series of corresponding components with classes `cs-content-a`, `-b`, `-c`, etc.
 - Optionally, a `cs-content-no-tab` component which is visible only when no tab is open.

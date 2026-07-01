@@ -226,7 +226,7 @@ carrion-strap offers only the following basics:
 - `cs-tabs-bold-open-tab` which bolds the open tab.
 - `cs-tab-row`, which can put your tabs in a (wrapping) flex row.
 
-You may also wish to use `cs-when-open` and `cs-when-closed` to show/hide specific elements inside your `<summary>` component. See [Advanced utilities#Details-related classes](./advanced.md#details-related-classes).
+You may also wish to use `cs-when-open` and `cs-when-closed` to show/hide specific elements inside your `<summary>` component. See [Advanced utilities &sect; Details-related classes](../advanced#details-related-classes).
 
 Our recommendation is to follow styling like this:
 

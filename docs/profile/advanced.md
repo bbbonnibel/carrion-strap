@@ -40,7 +40,7 @@ Reasons I'd expect for you using this is:
 
 - To display a totally different element for the summary depending on whether it's open or closed.
 - To display entirely different icons.
-- To help you style [tabs](./components#tabs).
+- To help you style [tabs](../components#tabs).
 
 :::callout info Example
 

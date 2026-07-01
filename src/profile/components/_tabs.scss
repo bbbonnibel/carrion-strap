@@ -1,7 +1,5 @@
-.cs-tabs:has(.cs-tab:open) {
-  .cs-content-no-tab {
-    display: none;
-  }
+.cs-tabs .cs-tab {
+  user-select: none;
 }
 
 .cs-tabs .cs-tab-row {
@@ -22,10 +20,30 @@ $suffixes:
   }
 }
 
-.cs-tabs.cs-tabs-no-marker summary::marker {
+.cs-tabs:has(.cs-tab:open) {
+  .cs-content-default {
+    display: none;
+  }
+}
+
+.cs-tabs.cs-no-marker summary::marker {
   content: none;
 }
 
-.cs-tabs.cs-tabs-bold-open-tab .cs-tab:open summary {
-  font-weight: bold;
+.cs-tabs-reset {
+  .cs-tab {
+    margin: unset;
+    padding: unset;
+    background: unset;
+    border-radius: unset;
+  }
+
+  .cs-tab summary {
+    font-weight: inherit;
+    color: inherit;
+  }
+
+  .cs-tab summary:hover {
+    color: inherit;
+  }
 }

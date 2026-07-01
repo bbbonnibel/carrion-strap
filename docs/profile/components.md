@@ -166,8 +166,7 @@ Because of limitations, tabs need to use a `<details><summary>` structure. You'l
 Here's how you do tabs:
 
 ```html
-<div class="cs-tabs / cs-tabs-no-marker cs-tabs-bold-open-tab">
-                    <!-- 👆 totally optional minimal styling classes -->
+<div class="cs-tabs / cs-tabs-reset">
   <div class="cs-tab-row"> <!-- 👈 optional, puts these tabs in a row -->
     <details class="cs-tab cs-tab-a" name="tabs" open><summary>Tab A</summary></details>
     <details class="cs-tab cs-tab-b" name="tabs"><summary>Tab B</summary></details>
@@ -177,8 +176,8 @@ Here's how you do tabs:
   <div class="cs-content-a">Content A</div>
   <div class="cs-content-b">Content B</div>
   <div class="cs-content-c">Content C</div>
-  <div class="cs-content-no-tab">
-    <!-- The cs-content-no-tab class is active if `cs-tab` is open. -->
+  <div class="cs-content-default">
+    <!-- This will be visible if no `cs-tab` is open. -->
     No tab is open.
   </div>
 </div>
@@ -186,7 +185,7 @@ Here's how you do tabs:
 
 ::: callout info In practice
 
-<div class="cs-tabs / cs-tabs-no-marker cs-tabs-bold-open-tab / cs-tabs-example">
+<div class="cs-tabs / cs-tabs-example">
   <div class="cs-tab-row">
     <details class="cs-tab cs-tab-a" name="tabs" open><summary>Tab A</summary></details>
     <details class="cs-tab cs-tab-b" name="tabs"><summary>Tab B</summary></details>
@@ -196,8 +195,8 @@ Here's how you do tabs:
   <div class="cs-content-a">Content A</div>
   <div class="cs-content-b">Content B</div>
   <div class="cs-content-c">Content C</div>
-  <div class="cs-content-no-tab">
-    <!-- The cs-content-no-tab class is active if `cs-tab` is open. -->
+  <div class="cs-content-default">
+    <!-- This will be visible if no `cs-tab` is open. -->
     No tab is open.
   </div>
 </div>
@@ -213,7 +212,7 @@ The key parts to this feature are:
 
 Everything else is optional. Tabs and their content elements can go in any order, anywhere inside the `cs-tabs` element. You can even put the content before the tabs if you want.
 
-The above example uses `cs-tab-row`, an optional class which puts the tabs in a row.
+The above example uses `cs-tab-row`, an optional class which puts the tabs in a row, and `cs-tabs-reset`, which resets all the default styling applied to accordions in carrion.
 
 Here's the actual rules:
 
@@ -239,8 +238,8 @@ Since carrion-strap's philosophy is to do minimal styling, your tabs will not _l
 
 carrion-strap offers only the following basics:
 
-- `cs-tabs-no-marker` which removes the default marker on the `summary` component.
-- `cs-tabs-bold-open-tab` which bolds the open tab.
+- `cs-tabs-reset`: Reset all the default styling on the details/summary elements you use for your tabs.
+- `cs-no-marker`: put this on the `cs-tabs` element to hide the little ▾ indicator.
 - `cs-tab-row`, which can put your tabs in a (wrapping) flex row.
 
 You may also wish to use `cs-when-open` and `cs-when-closed` to show/hide specific elements inside your `<summary>` component. See [Advanced utilities &sect; Details-related classes](../advanced#details-related-classes).
@@ -248,18 +247,20 @@ You may also wish to use `cs-when-open` and `cs-when-closed` to show/hide specif
 Our recommendation is to follow styling like this:
 
 ```css
-.cs-tab summary {
+.cs-tabs .cs-tab summary {
   /* Styles for all your tabs */
 }
 
-.cs-tab:open summary {
+.cs-tabs .cs-tab:open summary {
   /* Styles for only your open tabs */
 }
 
-.cs-tab:not(:open) summary {
+.cs-tabs .cs-tab:not(:open) summary {
   /* Styles for only your closed tabs */
 }
 ```
+
+If you're not using `cs-tabs-reset`, you can drop the `.cs-tabs` from the start here. Otherwise, you'll need it to properly overwrite the reset styles.
 
 ## Image spoiler box
 

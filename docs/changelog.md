@@ -9,6 +9,7 @@ carrion-strap is currently at version 0. This is an experimental version to figu
 
 - Added [Tabs](https://bbbonnibel.github.io/carrion-strap/profile/components/#tabs)
 - Added `cs-when-open` and `cs-when-closed` to [Advanced utilities](https://bbbonnibel.github.io/carrion-strap/profile/advanced/#details-related-classes)
+- Added `cs-border-*` to [Color](https://bbbonnibel.github.io/carrion-strap/profile/color/) classes.
 
 # 31 May 2026
 

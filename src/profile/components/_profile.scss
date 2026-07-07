@@ -3,6 +3,7 @@
   --picture-min-width: 300px;
   --picture-max-width: 500px;
   --main-min-width: 300px;
+  --main-max-width: 700px;
 
   display: flex;
   flex-flow: row wrap;
@@ -36,6 +37,6 @@
   > .cs-main {
     flex: 2;
     min-width: var(--main-min-width);
-    max-width: 700px;
+    max-width: var(--main-max-width);
   }
 }

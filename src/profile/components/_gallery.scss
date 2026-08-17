@@ -26,12 +26,8 @@
     aspect-ratio: var(--thumb-aspect-ratio);
     border-radius: var(--image-radius);
     margin: 0;
-  }
-
-  > a,
-  img {
-    object-fit: inherit;
-    object-position: inherit;
+    object-fit: cover;
+    object-position: center;
   }
 
   &.cs-left {

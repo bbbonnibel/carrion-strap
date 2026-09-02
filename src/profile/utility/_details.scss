@@ -31,3 +31,7 @@ details:not(:open)
   + .cs-if-open-above {
   display: none;
 }
+
+.cs-no-marker summary::marker {
+  content: none;
+}

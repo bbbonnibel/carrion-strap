@@ -50,20 +50,24 @@ h2 {
 </style>
 
 <div class="cs-profile">
-  <div class="cs-picture">
-    <img src="https://bbbonnibel.github.io/carrion-strap/assets/images/evil-lyn.png">
-  </div>
+<div class="cs-picture">
+  <img src="https://bbbonnibel.github.io/carrion-strap/assets/images/evil-lyn.png">
+</div> <!-- end cs-picture -->
 
-  <div class="cs-main">
-    <header class="cs-text-align-center cs-font-serif">
-      <h2 class="cs-smallcaps cs-no-margin">Character name!</h2>
-      <div>Character subtitle</div>
-    </header>
-    <p>Aperiam cumque adipisci omnis tempore molestiae quibusdam. Magnam est impedit rerum perferendis quasi qui. Blanditiis voluptatem quod quod tempore minima quibusdam est dolores.</p>
-    <p>Eligendi eius provident ea. Fugiat cumque qui qui distinctio tenetur dolor qui minima. Aut iusto qui saepe sit. Eum cupiditate voluptates earum. Libero et et eum libero vel. Excepturi voluptates eos quo minus.</p>
-  </div>
+<div class="cs-main">
 
-</div>
+<header class="cs-text-align-center cs-font-serif">
+  <h2 class="cs-smallcaps cs-no-margin">Character name!</h2>
+  <div>Character subtitle</div>
+</header>
+
+Aperiam cumque adipisci omnis tempore molestiae quibusdam. Magnam est impedit rerum perferendis quasi qui. Blanditiis voluptatem quod quod tempore minima quibusdam est dolores.
+
+Eligendi eius provident ea. Fugiat cumque qui qui distinctio tenetur dolor qui minima. Aut iusto qui saepe sit. Eum cupiditate voluptates earum. Libero et et eum libero vel. Excepturi voluptates eos quo minus.
+
+</div> <!-- end cs-main -->
+
+</div> <!-- end cs-profile -->
 ```
 
 :::

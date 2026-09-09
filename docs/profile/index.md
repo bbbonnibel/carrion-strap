@@ -66,7 +66,6 @@ Aperiam cumque adipisci omnis tempore molestiae quibusdam. Magnam est impedit re
 Eligendi eius provident ea. Fugiat cumque qui qui distinctio tenetur dolor qui minima. Aut iusto qui saepe sit. Eum cupiditate voluptates earum. Libero et et eum libero vel. Excepturi voluptates eos quo minus.
 
 </div> <!-- end cs-main -->
-
 </div> <!-- end cs-profile -->
 ```
 

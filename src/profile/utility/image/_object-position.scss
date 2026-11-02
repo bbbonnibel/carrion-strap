@@ -16,6 +16,24 @@ $positions: top, left, bottom, right, center;
   }
 }
 
+.cs-op-top-25 {
+  @include object-position(center 25%);
+}
+
+.cs-op-bottom-25,
+.cs-op-top-75 {
+  @include object-position(center 75%);
+}
+
+.cs-op-left-25 {
+  @include object-position(25% center);
+}
+
+.cs-op-right-25,
+.cs-op-left-75 {
+  @include object-position(75% center);
+}
+
 // Corners
 
 .cs-op-top-left,

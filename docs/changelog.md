@@ -8,6 +8,7 @@ carrion-strap is currently at version 0. This is an experimental version to figu
 # 4 November 2026
 
 - Added [the Resources page](https://bbbonnibel.github.io/carrion-strap/resources)
+- Added [the Fonts guide](https://bbbonnibel.github.io/carrion-strap/resources)
 - Folded _extras/units_ into the profile section.
 
 # 1 July 2026

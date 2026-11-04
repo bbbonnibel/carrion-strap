@@ -91,6 +91,18 @@ module.exports = {
     //   path: "/chat",
     // },
     {
+      title: "Guides",
+      icon: "library",
+      collapsible: true,
+      children: [
+        {
+          title: "Fonts guide",
+          icon: "book-type",
+          path: "/guide/fonts",
+        },
+      ],
+    },
+    {
       title: "Additional resources",
       icon: "sparkle",
       path: "/resources",

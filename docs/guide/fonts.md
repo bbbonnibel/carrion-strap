@@ -14,16 +14,6 @@ Google Fonts provides an easier experience for newbies, so if you're not sure wh
 
 You can use fonts from multiple font providers, e.g. you can use a font from Bunny Fonts and another from Google Fonts. You're not locked into just one or the other.
 
-## Why does this matter? Why do I need them?
-
-You have a lot of fonts on your computer, after all! You have Georgia and Comic Sans and all these other cool fonts. Why not just use those?
-
-Well, here's the thing: if you want _anyone else_ to see that font, the person _reading_ your profile _also_ needs to have that font installed on their system. Mac won't have Comic Sans. Someone's machine might not have Georgia. In fact, Android phones have _none_ of these fonts at all. The only fonts all these sysetms have reliably are: `serif`, `sans-serif`, `monospace`, and you won't even know _which_ serif/sans-serif/monospace exactly.
-
-This is why we use _webfonts._ It's a CSS thing where we say “that font file right there, I want to use that one.” This is like the way we share images: we put it somewhere and point people to it. Now everyone gets to see that font.
-
-**Basically:** If you're configuring a font, but you're not using webfonts, just assume that most people cannot see the font you picked, they'll see Times New Roman or something instead. So use webfonts.
-
 ## Picking out a font
 
 Browse through the fonts on display. You may want to use the filters to narrow down the kind of thing you're looking for.
@@ -101,13 +91,13 @@ Google will be a little more complicated. It's going to give you a whole lot of 
 }
 ```
 
-We don't care about any of that. Just copy the font-family line. In the above snippet, that's this.
+We don't care about any of that. Just copy the font-family line. In the above snippet, that's this bit:
 
-```css
+```
 font-family: "Inter", sans-serif;
 ```
 
-**Then, use that font-family in your CSS.** You can do that like this:
+Then, use that font-family in your CSS. You can do that like this:
 
 ```css
 .some-style-you-already-have {
@@ -134,6 +124,8 @@ That was a lot, but it comes down to some pretty simple stuff. Here's what we ju
 
 If you're having trouble, ask for assistance in the help channel.
 
+Make sure you spelled the font name correctly. If the font is multiple words, you _must_ use quotes: `font-family: Seuz One` won't work, it _must_ be `font-family: 'Suez One'`.
+
 If you're using Bunny Fonts, make sure you picked the variant you're trying to use! Are you trying to apply bold text? Make sure you included the 800 variant! In fact, make sure that variant of the font even exists.
 
 Certain fonts are known not to load because they come from an unapproved CDN, so you'll just have to use a different one. The known list right now is:
@@ -141,3 +133,13 @@ Certain fonts are known not to load because they come from an unapproved CDN, so
 - Bodoni Moda
 
 (That's it.)
+
+## Appendix: Why does this matter? Why do I need to do all this?
+
+If you're happy just using the default carrion font, you don't have to do any of this. If you want to be more fancy with it and use other fonts, you might have to.
+
+The main thing people wonder about is this: “I have a lot of fonts on your computer, after all! I have Georgia and Comic Sans and all these other cool fonts. Why can't I just use those?”
+
+Well, here's the thing: if you want _anyone else_ to see that font, the person _reading_ your profile _also_ needs to have that font installed on their system, and they might not have it. Mac won't have Comic Sans. Someone's machine might not have Georgia. In fact, Android phones have _none_ of these fonts at all. If someone doesn't have your font, they're going to load in Times New Roman or something instead.
+
+This is why we use _webfonts._ It's a CSS thing where we say “that font file right there, I want to use that one.” That way I see the font, you see the font, we all see the font, because we're all referencing the same font file stored on a server somewhere instead of relying on it already being on our PC.

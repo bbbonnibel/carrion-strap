@@ -31,7 +31,7 @@ Once you have the fonts you want—you can pick out multiple!—you'll want to a
 - Google Fonts: Hit the bag in the top right, then **Get embed code**.
 - Bunny Fonts: Hit **Fonts +** in the upper right.
 
-You'll get presented with the option to embed your font with either HTML or CSS. Both of them work and are almost totally equivalent. *(Nerd stuff: The HTML option loads slightly more efficiently, but that's about it.)*
+You'll get presented with the option to embed your font with either HTML or CSS. They're totally equivalent, so which one is completely up to your personal preference. *(Nerd stuff: carrion converts either one into a `<link>` element at the top of the page no matter which one you use.)*
 
 ### If you choose CSS...
 
@@ -136,7 +136,7 @@ Certain fonts are known not to load because they come from an unapproved CDN, so
 
 (That's it.)
 
-### Why does this matter? Why do I need to do all this?
+### Why is all of this necessary?
 
 If you're happy just using the default carrion font, you don't have to do any of this. If you want to be more fancy with it and use other fonts, you might have to.
 

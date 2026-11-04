@@ -16,8 +16,6 @@ The carrion ecosystem features a number of additional resources people have buil
 
 These extensions modify carrion's behaviour or appearance via the [tampermonkey](https://www.tampermonkey.net/) browser extension. Scripts listed here are considered safe.
 
-None of these links point directly to a userscript install.
-
 - [Bonnibel's carrion userscripts](https://bbbonnibel.github.io/carrion-userscripts/): A collection of very specific extensions to modify or add to your carrion experience. *(Made by carrion-strap's authors.)*
 
 # Userstyles

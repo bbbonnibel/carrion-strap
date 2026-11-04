@@ -25,3 +25,8 @@ None of these links point directly to a userscript install.
 These extensions focus on customising carrion's appearance via the Stylus browser extension. ([Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/))
 
 - [Carrion Rose](https://carrion.chat/character/Carrion%20Rose/) ([Direct link](https://userstyles.world/style/27845/)): Re-theme and repaint carrion. This userstyle is customisable.
+
+# HTML and CSS reference
+
+- [MDN HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML): A comprehensive encyclopedia for HTML.
+- [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference): A comprehensive encyclopedia for CSS.

@@ -153,4 +153,4 @@ The following classes unset margin and/or padding:
 
 You can also combine these with a direction, e.g. `cs-no-top-margin` or `cs-no-left-spacing`.
 
-If you want to set spacing to specific units, see [*Extra modules: Units*](../extra/units).
+If you want to set spacing to specific units, see [*Units*](../units).

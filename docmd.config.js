@@ -103,6 +103,11 @@ module.exports = {
       path: "/changelog",
     },
     {
+      title: "Additional resources",
+      icon: "sparkle",
+      path: "/resources",
+    },
+    {
       title: "Contact us",
       icon: "mail",
       path: "/contact",

@@ -91,11 +91,6 @@ module.exports = {
     //   path: "/chat",
     // },
     {
-      title: "Changelog",
-      icon: "logs",
-      path: "/changelog",
-    },
-    {
       title: "Additional resources",
       icon: "sparkle",
       path: "/resources",
@@ -104,6 +99,11 @@ module.exports = {
       title: "Contact us",
       icon: "mail",
       path: "/contact",
+    },
+    {
+      title: "Changelog",
+      icon: "logs",
+      path: "/changelog",
     },
     {
       title: "GitHub",

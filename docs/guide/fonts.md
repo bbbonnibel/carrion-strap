@@ -18,9 +18,11 @@ You can use fonts from multiple font providers, e.g. you can use a font from Bun
 
 You have a lot of fonts on your computer, after all! You have Georgia and Comic Sans and all these other cool fonts. Why not just use those?
 
-Well, here's the thing: if you want _anyone else_ to see that font, the person _reading_ your profile _also_ needs to have that font installed on their system. Mac won't have Comic Sans. Someone's machine might not have Georgia. In fact, Android phones have _none_ of these fonts at all.
+Well, here's the thing: if you want _anyone else_ to see that font, the person _reading_ your profile _also_ needs to have that font installed on their system. Mac won't have Comic Sans. Someone's machine might not have Georgia. In fact, Android phones have _none_ of these fonts at all. The only fonts all these sysetms have reliably are: `serif`, `sans-serif`, `monospace`, and you won't even know _which_ serif/sans-serif/monospace exactly.
 
 This is why we use _webfonts._ It's a CSS thing where we say “that font file right there, I want to use that one.” This is like the way we share images: we put it somewhere and point people to it. Now everyone gets to see that font.
+
+**Basically:** If you're configuring a font, but you're not using webfonts, just assume that most people cannot see the font you picked, they'll see Times New Roman or something instead. So use webfonts.
 
 # Picking out a font
 
@@ -121,8 +123,21 @@ Or directly on an element like this:
 
 # Summary
 
-You can't use
+That was a lot, but it comes down to some pretty simple stuff. Here's what we just did:
 
----
+1. We picked out a fun font we wanted to use on our profile.
+1. We embedded a reference to that font on our page.
+1. We styled an element to use that font via the font-family attribute.
+1. That element is now styled! Hooray!
 
-# Appendix: Questions
+# Troubleshooting
+
+If you're having trouble, ask for assistance in the help channel.
+
+If you're using Bunny Fonts, make sure you picked the variant you're trying to use! Are you trying to apply bold text? Make sure you included the 800 variant! In fact, make sure that variant of the font even exists.
+
+Certain fonts are known not to load because they come from an unapproved CDN, so you'll just have to use a different one. The known list right now is:
+
+- Bodoni Moda
+
+(That's it.)

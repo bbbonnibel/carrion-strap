@@ -150,8 +150,10 @@ This is why we use _webfonts._ It's a CSS thing where we say “that font file r
 
 ### Nerd stuff for CSS authors
 
-Webfonts can't actually be used within shadow DOM\*, so in the beginning you just couldn't use webfonts on carrion profiles. As of October 2026, carrion works around this by looking at any CSS files you import. If they're Google Fonts or Bunny Fonts imports that declare fonts, they get hoisted up to the page head to make the font import work.
+Webfonts can't actually be used within shadow DOM\*, which profile descriptions use, so all of this _shouldn't_ work at all. Webfonts have to be declared at the page level to work.
 
-This has one side effect to be mindful of: **fonts have to be referenced on the profile page itself.** If you have one CSS file used on all your characters, and you reuse the same font on a lot of them, then you might think you could move the `@import url(https://fonts.bunny.net/...)` into that shared CSS file and it'll work, but it won't get hoisted and won't load.
+As of October 2026, carrion works around this limitation by hoisting your font declarations to the top level. When you import your google font or bunny font CSS file, carrion parses that and creates a `<link>` element in the page head that references that CSS file instead, thus ensuring your font gets declared at the page level and is available to use.
 
-(\* Webfonts _should_ work by the spec, but Chrome and Firefox both require major changes and it's extremely low priority: [Chrome ticket](https://issues.chromium.org/issues/41085401), [Firefox ticket](https://bugzilla.mozilla.org/show_bug.cgi?id=1077396).)
+This has one limitation to be mindful of: **fonts have to be referenced on the profile page itself.** If you have one CSS file used on all your characters, and you reuse the same font on a lot of them, then you might think you could move the `@import url(https://fonts.bunny.net/...)` into that shared CSS file and it'll work, but it won't get hoisted and won't load.
+
+(\* Technically webfonts _should_ work by the spec, but Chrome and Firefox both require major changes and it's extremely low priority: [Chrome ticket](https://issues.chromium.org/issues/41085401), [Firefox ticket](https://bugzilla.mozilla.org/show_bug.cgi?id=1077396).)

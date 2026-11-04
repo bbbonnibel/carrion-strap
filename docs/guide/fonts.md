@@ -14,7 +14,7 @@ Google Fonts provides an easier experience for newbies, so if you're not sure wh
 
 You can use fonts from multiple font providers, e.g. you can use a font from Bunny Fonts and another from Google Fonts. You're not locked into just one or the other.
 
-## Picking out a font
+## Step 1: Pick out a font
 
 Browse through the fonts on display. You may want to use the filters to narrow down the kind of thing you're looking for.
 
@@ -24,7 +24,7 @@ Once you've found some fonts you're interested in, hit “Add font” (Google) o
 
 In Bunny Fonts, if the font has multiple variants and you're not sure what to choose, add the following variants (whichever are available): *Normal 400, Italic 400, Normal 800, Italic 800*. That lets you use bold and italic text.
 
-## Putting it in your profile
+## Step 2: Reference it in your profile
 
 Once you have the fonts you want—you can pick out multiple!—you'll want to add them to your profile.
 
@@ -69,7 +69,7 @@ See all those preconnect lines? We don't care about those. Just copy the last li
 
 Put that at the very top of your profile.
 
-## Applying your font
+## Step 3: Apply your font
 
 Bunny will give you a font family to copy.
 
@@ -120,7 +120,9 @@ That was a lot, but it comes down to some pretty simple stuff. Here's what we ju
 1. We styled an element to use that font via the font-family attribute.
 1. That element is now styled! Hooray!
 
-## Troubleshooting
+## Appendix
+
+### Troubleshooting
 
 If you're having trouble, ask for assistance in the help channel.
 
@@ -134,7 +136,7 @@ Certain fonts are known not to load because they come from an unapproved CDN, so
 
 (That's it.)
 
-## Appendix: Why does this matter? Why do I need to do all this?
+### Why does this matter? Why do I need to do all this?
 
 If you're happy just using the default carrion font, you don't have to do any of this. If you want to be more fancy with it and use other fonts, you might have to.
 

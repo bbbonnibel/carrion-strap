@@ -31,7 +31,13 @@ Once you have the fonts you want—you can pick out multiple!—you'll want to a
 - Google Fonts: Hit the bag in the top right, then **Get embed code**.
 - Bunny Fonts: Hit **Fonts +** in the upper right.
 
-You'll get presented with the option to embed your font with either HTML or CSS. They're totally equivalent, so which one is completely up to your personal preference. *(Nerd stuff: carrion converts either one into a `<link>` element at the top of the page no matter which one you use.)*
+You'll get presented with the option to embed your font with either HTML or CSS. They're totally equivalent, so which one is completely up to your personal preference.
+
+::: callout warning Heads up for CSS authors
+
+Be advised you _must_ import these webfonts inside the profile itself. You can't shift the `@import` into an external CSS file. See [Nerd stuff for CSS authors](#nerd-stuff-for-css-authors) below. Also, whether you use the HTML or CSS option, either way gets hoisted into a `<link>` in the head, so they're both identical in the end.
+
+:::
 
 ### If you choose CSS...
 

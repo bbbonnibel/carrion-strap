@@ -14,7 +14,7 @@ Google Fonts provides an easier experience for newbies, so if you're not sure wh
 
 You can use fonts from multiple font providers, e.g. you can use a font from Bunny Fonts and another from Google Fonts. You're not locked into just one or the other.
 
-# Why does this matter? Why do I need them?
+## Why does this matter? Why do I need them?
 
 You have a lot of fonts on your computer, after all! You have Georgia and Comic Sans and all these other cool fonts. Why not just use those?
 
@@ -24,7 +24,7 @@ This is why we use _webfonts._ It's a CSS thing where we say “that font file r
 
 **Basically:** If you're configuring a font, but you're not using webfonts, just assume that most people cannot see the font you picked, they'll see Times New Roman or something instead. So use webfonts.
 
-# Picking out a font
+## Picking out a font
 
 Browse through the fonts on display. You may want to use the filters to narrow down the kind of thing you're looking for.
 
@@ -34,7 +34,7 @@ Once you've found some fonts you're interested in, hit “Add font” (Google) o
 
 In Bunny Fonts, if the font has multiple variants and you're not sure what to choose, add the following variants (whichever are available): *Normal 400, Italic 400, Normal 800, Italic 800*. That lets you use bold and italic text.
 
-# Putting it in your profile
+## Putting it in your profile
 
 Once you have the fonts you want—you can pick out multiple!—you'll want to add them to your profile.
 
@@ -43,7 +43,7 @@ Once you have the fonts you want—you can pick out multiple!—you'll want to a
 
 You'll get presented with the option to embed your font with either HTML or CSS. Both of them work and are almost totally equivalent. *(Nerd stuff: The HTML option loads slightly more efficiently, but that's about it.)*
 
-## If you choose CSS...
+### If you choose CSS...
 
 You'll see code like this:
 
@@ -61,7 +61,7 @@ Copy and paste that into your profile like this:
 
 If you already have a style element, you can just put it inside the top of that one on its own line.
 
-## If you choose HTML...
+### If you choose HTML...
 
 You'll see a _lot_ of code, like this:
 
@@ -79,7 +79,7 @@ See all those preconnect lines? We don't care about those. Just copy the last li
 
 Put that at the very top of your profile.
 
-# Applying your font
+## Applying your font
 
 Bunny will give you a font family to copy.
 
@@ -121,7 +121,7 @@ Or directly on an element like this:
 <div style="font-family: 'Suez One', serif;">some text</div>
 ```
 
-# Summary
+## Summary
 
 That was a lot, but it comes down to some pretty simple stuff. Here's what we just did:
 
@@ -130,7 +130,7 @@ That was a lot, but it comes down to some pretty simple stuff. Here's what we ju
 1. We styled an element to use that font via the font-family attribute.
 1. That element is now styled! Hooray!
 
-# Troubleshooting
+## Troubleshooting
 
 If you're having trouble, ask for assistance in the help channel.
 

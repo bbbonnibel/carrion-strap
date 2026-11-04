@@ -5,13 +5,10 @@ description: "carrion-strap is a CSS library for carrion.chat. come get some str
 
 The Units module offers a number of additonal classes for defining font sizes, margins, and other small things.
 
-It's an extra module you need to import separately for your profile in your styles:
+Because it's relatively large, it's an extra module you need to import separately for your profile in your styles:
 
 ```html
 <link rel="stylesheet" href="https://bbbonnibel.github.io/carrion-strap/release/v0/units.css">
-<style>
-<!-- your custom styles here -->
-</style>
 ```
 
 Some things to bear in mind:

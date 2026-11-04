@@ -78,17 +78,10 @@ module.exports = {
           path: "/profile/components",
           icon: "puzzle",
         },
-      ],
-    },
-    {
-      title: "Extra modules",
-      icon: "cog",
-      collapsible: true,
-      children: [
         {
           title: "Units",
           icon: "ruler",
-          path: "/extra/units",
+          path: "/profile/units",
         },
       ],
     },

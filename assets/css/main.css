@@ -155,3 +155,7 @@ summary {
     font-weight: bold;
   }
 }
+
+.page-footer-actions {
+  display: none;
+}

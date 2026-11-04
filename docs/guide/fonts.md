@@ -35,7 +35,7 @@ You'll get presented with the option to embed your font with either HTML or CSS.
 
 ::: callout warning Heads up for CSS authors
 
-Be advised you _must_ import these webfonts inside the profile itself. You can't shift the `@import` into an external CSS file. See [Nerd stuff for CSS authors](#nerd-stuff-for-css-authors) below. Also, whether you use the HTML or CSS option, either way gets hoisted into a `<link>` in the head, so they're both identical in the end.
+Be advised you _must_ import these webfonts inside the profile itself. You can't shift the `@import` into an external CSS file. See [Nerd stuff for CSS authors](#nerd-stuff-for-css-authors) below. Also, whether you use the HTML or CSS option, either way gets hoisted into a `<link>` in the page's head element, so they're both identical in the end.
 
 :::
 

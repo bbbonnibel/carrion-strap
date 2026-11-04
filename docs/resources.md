@@ -31,4 +31,4 @@ These extensions customise carrion's appearance via the Stylus browser extension
 
 ---
 
-You can [contact us](https://bbbonnibel.github.io/carrion-strap/contact) for modifications to this page. Please do that if you want a resource added or removed, or if you want our entry on your thing updated. Note that we will not link directly to userscript or userstyle files; they must have a page that in turn installs the uesrscript/uesrstyle.
+You can [contact us](https://bbbonnibel.github.io/carrion-strap/contact) if you have an entry to add, or if you want the entry for your thing modified or removed. We will not link directly to userscript `.js` or userstyle `.css` files; there must be a page that in turn installs the userscript/userstyle.

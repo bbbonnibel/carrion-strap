@@ -38,7 +38,7 @@ module.exports = {
   minify: true, // Minify HTML/CSS/JS in build
   autoTitleFromH1: true, // Auto-generate page title from first H1
   copyCode: true, // Show "copy" button on code blocks
-  pageNavigation: true, // Prev/Next buttons at bottom
+  pageNavigation: false, // Prev/Next buttons at bottom
 
   // --- Navigation (Sidebar) ---
   navigation: [
@@ -136,6 +136,8 @@ module.exports = {
       defaultPriority: 0.8, // Priority between 0.0 and 1.0
     },
   },
+
+  pageNavigation: false,
 
   // --- Footer ---
   footer: `© ${new Date().getFullYear()} carrion-strap. This library is a community work and is not produced or endorsed by carrion.`,

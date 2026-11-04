@@ -3,7 +3,7 @@ title: "Fonts guide"
 description: "carrion-strap is a CSS library for carrion.chat. come get some strap."
 ---
 
-carrion now supports **webfonts**. That's a fancy way of saying you can bring other fonts to your profile beside the defaults.
+carrion supports **webfonts**. That's a fancy way of saying you can bring other fonts to your profile beside the defaults.
 
 Currently the following font providers are supported:
 
@@ -141,3 +141,11 @@ The main thing people wonder about is this: “I have a lot of fonts on your com
 Well, here's the thing: if you want _anyone else_ to see that font, the person _reading_ your profile _also_ needs to have that font installed on their system, and they might not have it. Mac won't have Comic Sans. Someone's machine might not have Georgia. In fact, Android phones have _none_ of these fonts at all. If someone doesn't have your font, they're going to load in Times New Roman or something instead.
 
 This is why we use _webfonts._ It's a CSS thing where we say “that font file right there, I want to use that one.” That way I see the font, you see the font, we all see the font, because we're all referencing the same font file stored on a server somewhere instead of relying on it already being on our PC.
+
+### Nerd stuff for CSS authors
+
+Webfonts can't actually be used within shadow DOM\*, so in the beginning you just couldn't use webfonts on carrion profiles. As of October 2026, carrion works around this by looking at any CSS files you import. If they're Google Fonts or Bunny Fonts imports that declare fonts, they get hoisted up to the page head to make the font import work.
+
+This has one side effect to be mindful of: **fonts have to be referenced on the profile page itself.** If you have one CSS file used on all your characters, and you reuse the same font on a lot of them, then you might think you could move the `@import url(https://fonts.bunny.net/...)` into that shared CSS file and it'll work, but it won't get hoisted and won't load.
+
+(\* Webfonts _should_ work by the spec, but Chrome and Firefox both require major changes and it's extremely low priority: [Chrome ticket](https://issues.chromium.org/issues/41085401), [Firefox ticket](https://bugzilla.mozilla.org/show_bug.cgi?id=1077396).)

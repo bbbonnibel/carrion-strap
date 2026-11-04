@@ -20,9 +20,9 @@ None of these links point directly to a userscript install.
 
 - [Bonnibel's carrion userscripts](https://bbbonnibel.github.io/carrion-userscripts/): A collection of very specific extensions to modify or add to your carrion experience. *(Made by carrion-strap's authors.)*
 
-# Stylus extensions
+# Userstyles
 
-These extensions focus on customising carrion's appearance via the Stylus browser extension. ([Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/))
+These extensions customise carrion's appearance via the Stylus browser extension. ([Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/))
 
 - [Carrion Rose](https://carrion.chat/character/Carrion%20Rose/) ([Direct link](https://userstyles.world/style/27845/)): Re-theme and repaint carrion. This userstyle is customisable.
 
@@ -30,3 +30,7 @@ These extensions focus on customising carrion's appearance via the Stylus browse
 
 - [MDN HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML): A comprehensive encyclopedia for HTML.
 - [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference): A comprehensive encyclopedia for CSS.
+
+---
+
+You can [contact us](https://bbbonnibel.github.io/carrion-strap/contact) for modifications to this page. Please do that if you want a resource added or removed, or if you want our entry on your thing updated. Note that we will not link directly to userscript or userstyle files; they must have a page that in turn installs the uesrscript/uesrstyle.

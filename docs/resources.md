@@ -23,6 +23,7 @@ These extensions modify carrion's behaviour or appearance via the [tampermonkey]
 These extensions customise carrion's appearance via the Stylus browser extension. ([Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/))
 
 - [Carrion Rose](https://carrion.chat/character/Carrion%20Rose/) ([Direct link](https://userstyles.world/style/27845/)): Re-theme and repaint carrion. This userstyle is customisable.
+- [CarrionCustomColors](https://codeberg.org/adeline184/CarrionCustomColors): Custom name colors in chat. Install it to see others' custom colors, and request your own.
 
 # HTML and CSS reference
 

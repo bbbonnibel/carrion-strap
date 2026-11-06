@@ -103,7 +103,7 @@ module.exports = {
       ],
     },
     {
-      title: "Additional resources",
+      title: "Community resources",
       icon: "sparkle",
       path: "/resources",
     },

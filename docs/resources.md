@@ -1,9 +1,9 @@
 ---
-title: "Additional resources"
+title: "Community resources"
 description: "carrion-strap is a CSS library for carrion.chat. come get some strap."
 ---
 
-The carrion ecosystem features a number of additional resources people have built.
+The carrion ecosystem features a number of other community resources people have built.
 
 # Profile tools
 

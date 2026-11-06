@@ -136,7 +136,10 @@ Make sure you spelled the font name correctly. If the font is multiple words, yo
 
 If you're using Bunny Fonts, make sure you picked the variant you're trying to use! Are you trying to apply bold text? Make sure you included the 800 variant! In fact, make sure that variant of the font even exists.
 
-Certain fonts on Bunny are known not to load because the font file gets served from an unapproved CDN. That list right now is just _Bodoni Moda SC_, but there could be others. If your font doesn't load altogether, try a different one just to check. (And let us know if one of them is broken so we can build a list!)
+Certain fonts on Bunny are known not to load because the font file gets served from an unapproved CDN. If your font doesn't load altogether, try a different one just to check. (And let us know if one of them is broken!) The list right now of known broken fonts is:
+
+- Bodoni Moda SC
+- Poltawski Nowy
 
 ### Why is all of this necessary?
 

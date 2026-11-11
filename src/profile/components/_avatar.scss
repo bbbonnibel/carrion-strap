@@ -1,0 +1,29 @@
+.cs-avatar {
+  --size: 1em;
+  height: var(--size);
+  aspect-ratio: 1/1;
+  object-position: center;
+  object-fit: cover;
+}
+
+.cs-avatar-round {
+  border-radius: 50%;
+}
+
+.cs-avatar-square {
+  border-radius: 8px;
+}
+
+.cs-avatar-large .cs-avatar-lg {
+  --size: 200px;
+}
+
+.cs-avatar-medium,
+.cs-avatar-md {
+  --size: 150px;
+}
+
+.cs-avatar-small,
+.cs-avatar-small {
+  --size: 100px;
+}

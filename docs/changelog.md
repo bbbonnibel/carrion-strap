@@ -5,6 +5,10 @@ description: "carrion-strap is a CSS library for carrion.chat. come get some str
 
 carrion-strap is currently at version 0. This is an experimental version to figure out what carrion-strap can/should do, and how it should do it.
 
+# 11 November 2026
+
+- Added `cs-reset` for `<details>` elements in [Advanced utilities](https://bbbonnibel.github.io/carrion-strap/profile/advanced/#details-related-classes).
+
 # 4 November 2026
 
 - Added [the Resources page](https://bbbonnibel.github.io/carrion-strap/resources)

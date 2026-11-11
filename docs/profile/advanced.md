@@ -27,6 +27,20 @@ You can align a block left, center, or right, using `cs-block-align-left`, `cs-b
 
 This relates to the `:::` or `<details>` syntax that creates an accordion.
 
+### Reset the details box styling
+
+Since Details classes are useful for all kinds of shenanigans, you might want to reset their styles back to nothing — no box, no marker, no unique text. **The only thing kept is the cursor,** which can be useful to indicate this is an interactive element.
+
+Use the `cs-reset` class on any details element to reset its styles back to nothing.
+
+```html
+<details class="cs-reset">
+  <summary>
+    Summary text
+  </summary>
+</details>
+```
+
 ### Show or hide an element inside the summary
 
 You may wish to show/hide content inside the summary element itself, depending on whether the details element is open or closed.

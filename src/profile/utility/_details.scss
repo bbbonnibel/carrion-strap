@@ -32,6 +32,26 @@ details:not(:open)
   display: none;
 }
 
+// No-marker
+
 .cs-no-marker summary::marker {
   content: none;
+}
+
+// Reset
+
+details.cs-reset {
+  margin: unset;
+  padding: unset;
+  background: unset;
+  border-radius: unset;
+
+  & summary {
+    color: unset;
+    font-weight: unset;
+
+    & ::marker {
+      content: none;
+    }
+  }
 }
